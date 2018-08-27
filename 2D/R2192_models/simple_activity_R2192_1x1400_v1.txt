@@ -1,0 +1,225 @@
+Original data: (5404, 63) (5404, 2)
+minX/maxX/meanX/stdX/miny/maxy: 0.0 59.0 0.740248258198 2.35919268164 4.39033 107.044
+Creating model...
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+input_1 (InputLayer)         (None, 100, 63)           0         
+_________________________________________________________________
+lstm_1 (LSTM)                (None, 100, 512)          1179648   
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 100, 512)          0         
+_________________________________________________________________
+lstm_2 (LSTM)                (None, 512)               2099200   
+_________________________________________________________________
+dropout_2 (Dropout)          (None, 512)               0         
+_________________________________________________________________
+dense_1 (Dense)              (None, 2)                 1026      
+=================================================================
+Total params: 3,279,874
+Trainable params: 3,279,874
+Non-trainable params: 0
+_________________________________________________________________
+Calculating gradients...
+test shape: (541, 63) (541, 2)
+last piece to add
+After sliding window: (442, 100, 63) (442, 2)
+R2192_models/simple_window_scan_R2192_1x1400_seq100_ep50_b64_1-1.hdf5
+[<keras.engine.topology.InputLayer object at 0x7fedc77d94d0>, <keras.layers.recurrent.LSTM object at 0x7fed72f5b850>, <keras.layers.core.Dropout object at 0x7fed6e376750>, <keras.layers.recurrent.LSTM object at 0x7fed6e270c50>, <keras.layers.core.Dropout object at 0x7fed6e213910>, <keras.layers.core.Dense object at 0x7fed6e10add0>]
+<keras.layers.recurrent.LSTM object at 0x7fed6e270c50> ['__call__', '__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_add_inbound_node', '_built', '_get_node_attribute_at_index', '_inbound_nodes', '_initial_weights', '_losses', '_node_key', '_non_trainable_weights', '_num_constants', '_outbound_nodes', '_per_input_losses', '_per_input_updates', '_states', '_trainable_weights', '_updates', 'activation', 'activity_regularizer', 'add_loss', 'add_update', 'add_weight', 'assert_input_compatibility', 'bias_constraint', 'bias_initializer', 'bias_regularizer', 'build', 'built', 'call', 'cell', 'compute_mask', 'compute_output_shape', 'constants_spec', 'count_params', 'dropout', 'from_config', 'get_config', 'get_initial_state', 'get_input_at', 'get_input_mask_at', 'get_input_shape_at', 'get_losses_for', 'get_output_at', 'get_output_mask_at', 'get_output_shape_at', 'get_updates_for', 'get_weights', 'go_backwards', 'implementation', 'input', 'input_mask', 'input_shape', 'input_spec', 'kernel_constraint', 'kernel_initializer', 'kernel_regularizer', 'losses', 'name', 'non_trainable_weights', 'output', 'output_mask', 'output_shape', 'recurrent_activation', 'recurrent_constraint', 'recurrent_dropout', 'recurrent_initializer', 'recurrent_regularizer', 'reset_states', 'return_sequences', 'return_state', 'set_weights', 'state_spec', 'stateful', 'states', 'supports_masking', 'trainable', 'trainable_weights', 'unit_forget_bias', 'units', 'unroll', 'updates', 'use_bias', 'weights']
+<type 'numpy.ndarray'> (442, 100, 63)
+<type 'numpy.ndarray'> (64, 512)
+<type 'numpy.ndarray'> (442, 100, 63)
+<type 'numpy.ndarray'> (64, 512)
+<type 'numpy.ndarray'> (442, 100, 63)
+<type 'numpy.ndarray'> (64, 512)
+<type 'numpy.ndarray'> (442, 100, 63)
+<type 'numpy.ndarray'> (64, 512)
+<type 'numpy.ndarray'> (442, 100, 63)
+<type 'numpy.ndarray'> (64, 512)
+<type 'numpy.ndarray'> (442, 100, 63)
+<type 'numpy.ndarray'> (64, 512)
+<type 'numpy.ndarray'> (442, 100, 63)
+<type 'numpy.ndarray'> (58, 512)
+test shape: (541, 63) (541, 2)
+last piece to add
+After sliding window: (442, 100, 63) (442, 2)
+R2192_models/simple_window_scan_R2192_1x1400_seq100_ep50_b64_1-2.hdf5
+[<keras.engine.topology.InputLayer object at 0x7fedc77d94d0>, <keras.layers.recurrent.LSTM object at 0x7fed72f5b850>, <keras.layers.core.Dropout object at 0x7fed6e376750>, <keras.layers.recurrent.LSTM object at 0x7fed6e270c50>, <keras.layers.core.Dropout object at 0x7fed6e213910>, <keras.layers.core.Dense object at 0x7fed6e10add0>]
+<keras.layers.recurrent.LSTM object at 0x7fed6e270c50> ['__call__', '__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_add_inbound_node', '_built', '_get_node_attribute_at_index', '_inbound_nodes', '_initial_weights', '_losses', '_node_key', '_non_trainable_weights', '_num_constants', '_outbound_nodes', '_per_input_losses', '_per_input_updates', '_states', '_trainable_weights', '_updates', 'activation', 'activity_regularizer', 'add_loss', 'add_update', 'add_weight', 'assert_input_compatibility', 'bias_constraint', 'bias_initializer', 'bias_regularizer', 'build', 'built', 'call', 'cell', 'compute_mask', 'compute_output_shape', 'constants_spec', 'count_params', 'dropout', 'from_config', 'get_config', 'get_initial_state', 'get_input_at', 'get_input_mask_at', 'get_input_shape_at', 'get_losses_for', 'get_output_at', 'get_output_mask_at', 'get_output_shape_at', 'get_updates_for', 'get_weights', 'go_backwards', 'implementation', 'input', 'input_mask', 'input_shape', 'input_spec', 'kernel_constraint', 'kernel_initializer', 'kernel_regularizer', 'losses', 'name', 'non_trainable_weights', 'output', 'output_mask', 'output_shape', 'recurrent_activation', 'recurrent_constraint', 'recurrent_dropout', 'recurrent_initializer', 'recurrent_regularizer', 'reset_states', 'return_sequences', 'return_state', 'set_weights', 'state_spec', 'stateful', 'states', 'supports_masking', 'trainable', 'trainable_weights', 'unit_forget_bias', 'units', 'unroll', 'updates', 'use_bias', 'weights']
+<type 'numpy.ndarray'> (442, 100, 63)
+<type 'numpy.ndarray'> (64, 512)
+<type 'numpy.ndarray'> (442, 100, 63)
+<type 'numpy.ndarray'> (64, 512)
+<type 'numpy.ndarray'> (442, 100, 63)
+<type 'numpy.ndarray'> (64, 512)
+<type 'numpy.ndarray'> (442, 100, 63)
+<type 'numpy.ndarray'> (64, 512)
+<type 'numpy.ndarray'> (442, 100, 63)
+<type 'numpy.ndarray'> (64, 512)
+<type 'numpy.ndarray'> (442, 100, 63)
+<type 'numpy.ndarray'> (64, 512)
+<type 'numpy.ndarray'> (442, 100, 63)
+<type 'numpy.ndarray'> (58, 512)
+test shape: (541, 63) (541, 2)
+last piece to add
+After sliding window: (442, 100, 63) (442, 2)
+R2192_models/simple_window_scan_R2192_1x1400_seq100_ep50_b64_1-3.hdf5
+[<keras.engine.topology.InputLayer object at 0x7fedc77d94d0>, <keras.layers.recurrent.LSTM object at 0x7fed72f5b850>, <keras.layers.core.Dropout object at 0x7fed6e376750>, <keras.layers.recurrent.LSTM object at 0x7fed6e270c50>, <keras.layers.core.Dropout object at 0x7fed6e213910>, <keras.layers.core.Dense object at 0x7fed6e10add0>]
+<keras.layers.recurrent.LSTM object at 0x7fed6e270c50> ['__call__', '__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_add_inbound_node', '_built', '_get_node_attribute_at_index', '_inbound_nodes', '_initial_weights', '_losses', '_node_key', '_non_trainable_weights', '_num_constants', '_outbound_nodes', '_per_input_losses', '_per_input_updates', '_states', '_trainable_weights', '_updates', 'activation', 'activity_regularizer', 'add_loss', 'add_update', 'add_weight', 'assert_input_compatibility', 'bias_constraint', 'bias_initializer', 'bias_regularizer', 'build', 'built', 'call', 'cell', 'compute_mask', 'compute_output_shape', 'constants_spec', 'count_params', 'dropout', 'from_config', 'get_config', 'get_initial_state', 'get_input_at', 'get_input_mask_at', 'get_input_shape_at', 'get_losses_for', 'get_output_at', 'get_output_mask_at', 'get_output_shape_at', 'get_updates_for', 'get_weights', 'go_backwards', 'implementation', 'input', 'input_mask', 'input_shape', 'input_spec', 'kernel_constraint', 'kernel_initializer', 'kernel_regularizer', 'losses', 'name', 'non_trainable_weights', 'output', 'output_mask', 'output_shape', 'recurrent_activation', 'recurrent_constraint', 'recurrent_dropout', 'recurrent_initializer', 'recurrent_regularizer', 'reset_states', 'return_sequences', 'return_state', 'set_weights', 'state_spec', 'stateful', 'states', 'supports_masking', 'trainable', 'trainable_weights', 'unit_forget_bias', 'units', 'unroll', 'updates', 'use_bias', 'weights']
+<type 'numpy.ndarray'> (442, 100, 63)
+<type 'numpy.ndarray'> (64, 512)
+<type 'numpy.ndarray'> (442, 100, 63)
+<type 'numpy.ndarray'> (64, 512)
+<type 'numpy.ndarray'> (442, 100, 63)
+<type 'numpy.ndarray'> (64, 512)
+<type 'numpy.ndarray'> (442, 100, 63)
+<type 'numpy.ndarray'> (64, 512)
+<type 'numpy.ndarray'> (442, 100, 63)
+<type 'numpy.ndarray'> (64, 512)
+<type 'numpy.ndarray'> (442, 100, 63)
+<type 'numpy.ndarray'> (64, 512)
+<type 'numpy.ndarray'> (442, 100, 63)
+<type 'numpy.ndarray'> (58, 512)
+test shape: (541, 63) (541, 2)
+last piece to add
+After sliding window: (442, 100, 63) (442, 2)
+R2192_models/simple_window_scan_R2192_1x1400_seq100_ep50_b64_1-4.hdf5
+[<keras.engine.topology.InputLayer object at 0x7fedc77d94d0>, <keras.layers.recurrent.LSTM object at 0x7fed72f5b850>, <keras.layers.core.Dropout object at 0x7fed6e376750>, <keras.layers.recurrent.LSTM object at 0x7fed6e270c50>, <keras.layers.core.Dropout object at 0x7fed6e213910>, <keras.layers.core.Dense object at 0x7fed6e10add0>]
+<keras.layers.recurrent.LSTM object at 0x7fed6e270c50> ['__call__', '__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_add_inbound_node', '_built', '_get_node_attribute_at_index', '_inbound_nodes', '_initial_weights', '_losses', '_node_key', '_non_trainable_weights', '_num_constants', '_outbound_nodes', '_per_input_losses', '_per_input_updates', '_states', '_trainable_weights', '_updates', 'activation', 'activity_regularizer', 'add_loss', 'add_update', 'add_weight', 'assert_input_compatibility', 'bias_constraint', 'bias_initializer', 'bias_regularizer', 'build', 'built', 'call', 'cell', 'compute_mask', 'compute_output_shape', 'constants_spec', 'count_params', 'dropout', 'from_config', 'get_config', 'get_initial_state', 'get_input_at', 'get_input_mask_at', 'get_input_shape_at', 'get_losses_for', 'get_output_at', 'get_output_mask_at', 'get_output_shape_at', 'get_updates_for', 'get_weights', 'go_backwards', 'implementation', 'input', 'input_mask', 'input_shape', 'input_spec', 'kernel_constraint', 'kernel_initializer', 'kernel_regularizer', 'losses', 'name', 'non_trainable_weights', 'output', 'output_mask', 'output_shape', 'recurrent_activation', 'recurrent_constraint', 'recurrent_dropout', 'recurrent_initializer', 'recurrent_regularizer', 'reset_states', 'return_sequences', 'return_state', 'set_weights', 'state_spec', 'stateful', 'states', 'supports_masking', 'trainable', 'trainable_weights', 'unit_forget_bias', 'units', 'unroll', 'updates', 'use_bias', 'weights']
+<type 'numpy.ndarray'> (442, 100, 63)
+<type 'numpy.ndarray'> (64, 512)
+<type 'numpy.ndarray'> (442, 100, 63)
+<type 'numpy.ndarray'> (64, 512)
+<type 'numpy.ndarray'> (442, 100, 63)
+<type 'numpy.ndarray'> (64, 512)
+<type 'numpy.ndarray'> (442, 100, 63)
+<type 'numpy.ndarray'> (64, 512)
+<type 'numpy.ndarray'> (442, 100, 63)
+<type 'numpy.ndarray'> (64, 512)
+<type 'numpy.ndarray'> (442, 100, 63)
+<type 'numpy.ndarray'> (64, 512)
+<type 'numpy.ndarray'> (442, 100, 63)
+<type 'numpy.ndarray'> (58, 512)
+test shape: (540, 63) (540, 2)
+last piece to add
+After sliding window: (441, 100, 63) (441, 2)
+R2192_models/simple_window_scan_R2192_1x1400_seq100_ep50_b64_1-5.hdf5
+[<keras.engine.topology.InputLayer object at 0x7fedc77d94d0>, <keras.layers.recurrent.LSTM object at 0x7fed72f5b850>, <keras.layers.core.Dropout object at 0x7fed6e376750>, <keras.layers.recurrent.LSTM object at 0x7fed6e270c50>, <keras.layers.core.Dropout object at 0x7fed6e213910>, <keras.layers.core.Dense object at 0x7fed6e10add0>]
+<keras.layers.recurrent.LSTM object at 0x7fed6e270c50> ['__call__', '__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_add_inbound_node', '_built', '_get_node_attribute_at_index', '_inbound_nodes', '_initial_weights', '_losses', '_node_key', '_non_trainable_weights', '_num_constants', '_outbound_nodes', '_per_input_losses', '_per_input_updates', '_states', '_trainable_weights', '_updates', 'activation', 'activity_regularizer', 'add_loss', 'add_update', 'add_weight', 'assert_input_compatibility', 'bias_constraint', 'bias_initializer', 'bias_regularizer', 'build', 'built', 'call', 'cell', 'compute_mask', 'compute_output_shape', 'constants_spec', 'count_params', 'dropout', 'from_config', 'get_config', 'get_initial_state', 'get_input_at', 'get_input_mask_at', 'get_input_shape_at', 'get_losses_for', 'get_output_at', 'get_output_mask_at', 'get_output_shape_at', 'get_updates_for', 'get_weights', 'go_backwards', 'implementation', 'input', 'input_mask', 'input_shape', 'input_spec', 'kernel_constraint', 'kernel_initializer', 'kernel_regularizer', 'losses', 'name', 'non_trainable_weights', 'output', 'output_mask', 'output_shape', 'recurrent_activation', 'recurrent_constraint', 'recurrent_dropout', 'recurrent_initializer', 'recurrent_regularizer', 'reset_states', 'return_sequences', 'return_state', 'set_weights', 'state_spec', 'stateful', 'states', 'supports_masking', 'trainable', 'trainable_weights', 'unit_forget_bias', 'units', 'unroll', 'updates', 'use_bias', 'weights']
+<type 'numpy.ndarray'> (441, 100, 63)
+<type 'numpy.ndarray'> (64, 512)
+<type 'numpy.ndarray'> (441, 100, 63)
+<type 'numpy.ndarray'> (64, 512)
+<type 'numpy.ndarray'> (441, 100, 63)
+<type 'numpy.ndarray'> (64, 512)
+<type 'numpy.ndarray'> (441, 100, 63)
+<type 'numpy.ndarray'> (64, 512)
+<type 'numpy.ndarray'> (441, 100, 63)
+<type 'numpy.ndarray'> (64, 512)
+<type 'numpy.ndarray'> (441, 100, 63)
+<type 'numpy.ndarray'> (64, 512)
+<type 'numpy.ndarray'> (441, 100, 63)
+<type 'numpy.ndarray'> (57, 512)
+test shape: (540, 63) (540, 2)
+last piece to add
+After sliding window: (441, 100, 63) (441, 2)
+R2192_models/simple_window_scan_R2192_1x1400_seq100_ep50_b64_1-6.hdf5
+[<keras.engine.topology.InputLayer object at 0x7fedc77d94d0>, <keras.layers.recurrent.LSTM object at 0x7fed72f5b850>, <keras.layers.core.Dropout object at 0x7fed6e376750>, <keras.layers.recurrent.LSTM object at 0x7fed6e270c50>, <keras.layers.core.Dropout object at 0x7fed6e213910>, <keras.layers.core.Dense object at 0x7fed6e10add0>]
+<keras.layers.recurrent.LSTM object at 0x7fed6e270c50> ['__call__', '__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_add_inbound_node', '_built', '_get_node_attribute_at_index', '_inbound_nodes', '_initial_weights', '_losses', '_node_key', '_non_trainable_weights', '_num_constants', '_outbound_nodes', '_per_input_losses', '_per_input_updates', '_states', '_trainable_weights', '_updates', 'activation', 'activity_regularizer', 'add_loss', 'add_update', 'add_weight', 'assert_input_compatibility', 'bias_constraint', 'bias_initializer', 'bias_regularizer', 'build', 'built', 'call', 'cell', 'compute_mask', 'compute_output_shape', 'constants_spec', 'count_params', 'dropout', 'from_config', 'get_config', 'get_initial_state', 'get_input_at', 'get_input_mask_at', 'get_input_shape_at', 'get_losses_for', 'get_output_at', 'get_output_mask_at', 'get_output_shape_at', 'get_updates_for', 'get_weights', 'go_backwards', 'implementation', 'input', 'input_mask', 'input_shape', 'input_spec', 'kernel_constraint', 'kernel_initializer', 'kernel_regularizer', 'losses', 'name', 'non_trainable_weights', 'output', 'output_mask', 'output_shape', 'recurrent_activation', 'recurrent_constraint', 'recurrent_dropout', 'recurrent_initializer', 'recurrent_regularizer', 'reset_states', 'return_sequences', 'return_state', 'set_weights', 'state_spec', 'stateful', 'states', 'supports_masking', 'trainable', 'trainable_weights', 'unit_forget_bias', 'units', 'unroll', 'updates', 'use_bias', 'weights']
+<type 'numpy.ndarray'> (441, 100, 63)
+<type 'numpy.ndarray'> (64, 512)
+<type 'numpy.ndarray'> (441, 100, 63)
+<type 'numpy.ndarray'> (64, 512)
+<type 'numpy.ndarray'> (441, 100, 63)
+<type 'numpy.ndarray'> (64, 512)
+<type 'numpy.ndarray'> (441, 100, 63)
+<type 'numpy.ndarray'> (64, 512)
+<type 'numpy.ndarray'> (441, 100, 63)
+<type 'numpy.ndarray'> (64, 512)
+<type 'numpy.ndarray'> (441, 100, 63)
+<type 'numpy.ndarray'> (64, 512)
+<type 'numpy.ndarray'> (441, 100, 63)
+<type 'numpy.ndarray'> (57, 512)
+test shape: (540, 63) (540, 2)
+last piece to add
+After sliding window: (441, 100, 63) (441, 2)
+R2192_models/simple_window_scan_R2192_1x1400_seq100_ep50_b64_1-7.hdf5
+[<keras.engine.topology.InputLayer object at 0x7fedc77d94d0>, <keras.layers.recurrent.LSTM object at 0x7fed72f5b850>, <keras.layers.core.Dropout object at 0x7fed6e376750>, <keras.layers.recurrent.LSTM object at 0x7fed6e270c50>, <keras.layers.core.Dropout object at 0x7fed6e213910>, <keras.layers.core.Dense object at 0x7fed6e10add0>]
+<keras.layers.recurrent.LSTM object at 0x7fed6e270c50> ['__call__', '__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_add_inbound_node', '_built', '_get_node_attribute_at_index', '_inbound_nodes', '_initial_weights', '_losses', '_node_key', '_non_trainable_weights', '_num_constants', '_outbound_nodes', '_per_input_losses', '_per_input_updates', '_states', '_trainable_weights', '_updates', 'activation', 'activity_regularizer', 'add_loss', 'add_update', 'add_weight', 'assert_input_compatibility', 'bias_constraint', 'bias_initializer', 'bias_regularizer', 'build', 'built', 'call', 'cell', 'compute_mask', 'compute_output_shape', 'constants_spec', 'count_params', 'dropout', 'from_config', 'get_config', 'get_initial_state', 'get_input_at', 'get_input_mask_at', 'get_input_shape_at', 'get_losses_for', 'get_output_at', 'get_output_mask_at', 'get_output_shape_at', 'get_updates_for', 'get_weights', 'go_backwards', 'implementation', 'input', 'input_mask', 'input_shape', 'input_spec', 'kernel_constraint', 'kernel_initializer', 'kernel_regularizer', 'losses', 'name', 'non_trainable_weights', 'output', 'output_mask', 'output_shape', 'recurrent_activation', 'recurrent_constraint', 'recurrent_dropout', 'recurrent_initializer', 'recurrent_regularizer', 'reset_states', 'return_sequences', 'return_state', 'set_weights', 'state_spec', 'stateful', 'states', 'supports_masking', 'trainable', 'trainable_weights', 'unit_forget_bias', 'units', 'unroll', 'updates', 'use_bias', 'weights']
+<type 'numpy.ndarray'> (441, 100, 63)
+<type 'numpy.ndarray'> (64, 512)
+<type 'numpy.ndarray'> (441, 100, 63)
+<type 'numpy.ndarray'> (64, 512)
+<type 'numpy.ndarray'> (441, 100, 63)
+<type 'numpy.ndarray'> (64, 512)
+<type 'numpy.ndarray'> (441, 100, 63)
+<type 'numpy.ndarray'> (64, 512)
+<type 'numpy.ndarray'> (441, 100, 63)
+<type 'numpy.ndarray'> (64, 512)
+<type 'numpy.ndarray'> (441, 100, 63)
+<type 'numpy.ndarray'> (64, 512)
+<type 'numpy.ndarray'> (441, 100, 63)
+<type 'numpy.ndarray'> (57, 512)
+test shape: (540, 63) (540, 2)
+last piece to add
+After sliding window: (441, 100, 63) (441, 2)
+R2192_models/simple_window_scan_R2192_1x1400_seq100_ep50_b64_1-8.hdf5
+[<keras.engine.topology.InputLayer object at 0x7fedc77d94d0>, <keras.layers.recurrent.LSTM object at 0x7fed72f5b850>, <keras.layers.core.Dropout object at 0x7fed6e376750>, <keras.layers.recurrent.LSTM object at 0x7fed6e270c50>, <keras.layers.core.Dropout object at 0x7fed6e213910>, <keras.layers.core.Dense object at 0x7fed6e10add0>]
+<keras.layers.recurrent.LSTM object at 0x7fed6e270c50> ['__call__', '__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_add_inbound_node', '_built', '_get_node_attribute_at_index', '_inbound_nodes', '_initial_weights', '_losses', '_node_key', '_non_trainable_weights', '_num_constants', '_outbound_nodes', '_per_input_losses', '_per_input_updates', '_states', '_trainable_weights', '_updates', 'activation', 'activity_regularizer', 'add_loss', 'add_update', 'add_weight', 'assert_input_compatibility', 'bias_constraint', 'bias_initializer', 'bias_regularizer', 'build', 'built', 'call', 'cell', 'compute_mask', 'compute_output_shape', 'constants_spec', 'count_params', 'dropout', 'from_config', 'get_config', 'get_initial_state', 'get_input_at', 'get_input_mask_at', 'get_input_shape_at', 'get_losses_for', 'get_output_at', 'get_output_mask_at', 'get_output_shape_at', 'get_updates_for', 'get_weights', 'go_backwards', 'implementation', 'input', 'input_mask', 'input_shape', 'input_spec', 'kernel_constraint', 'kernel_initializer', 'kernel_regularizer', 'losses', 'name', 'non_trainable_weights', 'output', 'output_mask', 'output_shape', 'recurrent_activation', 'recurrent_constraint', 'recurrent_dropout', 'recurrent_initializer', 'recurrent_regularizer', 'reset_states', 'return_sequences', 'return_state', 'set_weights', 'state_spec', 'stateful', 'states', 'supports_masking', 'trainable', 'trainable_weights', 'unit_forget_bias', 'units', 'unroll', 'updates', 'use_bias', 'weights']
+<type 'numpy.ndarray'> (441, 100, 63)
+<type 'numpy.ndarray'> (64, 512)
+<type 'numpy.ndarray'> (441, 100, 63)
+<type 'numpy.ndarray'> (64, 512)
+<type 'numpy.ndarray'> (441, 100, 63)
+<type 'numpy.ndarray'> (64, 512)
+<type 'numpy.ndarray'> (441, 100, 63)
+<type 'numpy.ndarray'> (64, 512)
+<type 'numpy.ndarray'> (441, 100, 63)
+<type 'numpy.ndarray'> (64, 512)
+<type 'numpy.ndarray'> (441, 100, 63)
+<type 'numpy.ndarray'> (64, 512)
+<type 'numpy.ndarray'> (441, 100, 63)
+<type 'numpy.ndarray'> (57, 512)
+test shape: (540, 63) (540, 2)
+last piece to add
+After sliding window: (441, 100, 63) (441, 2)
+R2192_models/simple_window_scan_R2192_1x1400_seq100_ep50_b64_1-9.hdf5
+[<keras.engine.topology.InputLayer object at 0x7fedc77d94d0>, <keras.layers.recurrent.LSTM object at 0x7fed72f5b850>, <keras.layers.core.Dropout object at 0x7fed6e376750>, <keras.layers.recurrent.LSTM object at 0x7fed6e270c50>, <keras.layers.core.Dropout object at 0x7fed6e213910>, <keras.layers.core.Dense object at 0x7fed6e10add0>]
+<keras.layers.recurrent.LSTM object at 0x7fed6e270c50> ['__call__', '__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_add_inbound_node', '_built', '_get_node_attribute_at_index', '_inbound_nodes', '_initial_weights', '_losses', '_node_key', '_non_trainable_weights', '_num_constants', '_outbound_nodes', '_per_input_losses', '_per_input_updates', '_states', '_trainable_weights', '_updates', 'activation', 'activity_regularizer', 'add_loss', 'add_update', 'add_weight', 'assert_input_compatibility', 'bias_constraint', 'bias_initializer', 'bias_regularizer', 'build', 'built', 'call', 'cell', 'compute_mask', 'compute_output_shape', 'constants_spec', 'count_params', 'dropout', 'from_config', 'get_config', 'get_initial_state', 'get_input_at', 'get_input_mask_at', 'get_input_shape_at', 'get_losses_for', 'get_output_at', 'get_output_mask_at', 'get_output_shape_at', 'get_updates_for', 'get_weights', 'go_backwards', 'implementation', 'input', 'input_mask', 'input_shape', 'input_spec', 'kernel_constraint', 'kernel_initializer', 'kernel_regularizer', 'losses', 'name', 'non_trainable_weights', 'output', 'output_mask', 'output_shape', 'recurrent_activation', 'recurrent_constraint', 'recurrent_dropout', 'recurrent_initializer', 'recurrent_regularizer', 'reset_states', 'return_sequences', 'return_state', 'set_weights', 'state_spec', 'stateful', 'states', 'supports_masking', 'trainable', 'trainable_weights', 'unit_forget_bias', 'units', 'unroll', 'updates', 'use_bias', 'weights']
+<type 'numpy.ndarray'> (441, 100, 63)
+<type 'numpy.ndarray'> (64, 512)
+<type 'numpy.ndarray'> (441, 100, 63)
+<type 'numpy.ndarray'> (64, 512)
+<type 'numpy.ndarray'> (441, 100, 63)
+<type 'numpy.ndarray'> (64, 512)
+<type 'numpy.ndarray'> (441, 100, 63)
+<type 'numpy.ndarray'> (64, 512)
+<type 'numpy.ndarray'> (441, 100, 63)
+<type 'numpy.ndarray'> (64, 512)
+<type 'numpy.ndarray'> (441, 100, 63)
+<type 'numpy.ndarray'> (64, 512)
+<type 'numpy.ndarray'> (441, 100, 63)
+<type 'numpy.ndarray'> (57, 512)
+test shape: (540, 63) (540, 2)
+last piece to add
+After sliding window: (441, 100, 63) (441, 2)
+R2192_models/simple_window_scan_R2192_1x1400_seq100_ep50_b64_1-10.hdf5
+[<keras.engine.topology.InputLayer object at 0x7fedc77d94d0>, <keras.layers.recurrent.LSTM object at 0x7fed72f5b850>, <keras.layers.core.Dropout object at 0x7fed6e376750>, <keras.layers.recurrent.LSTM object at 0x7fed6e270c50>, <keras.layers.core.Dropout object at 0x7fed6e213910>, <keras.layers.core.Dense object at 0x7fed6e10add0>]
+<keras.layers.recurrent.LSTM object at 0x7fed6e270c50> ['__call__', '__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_add_inbound_node', '_built', '_get_node_attribute_at_index', '_inbound_nodes', '_initial_weights', '_losses', '_node_key', '_non_trainable_weights', '_num_constants', '_outbound_nodes', '_per_input_losses', '_per_input_updates', '_states', '_trainable_weights', '_updates', 'activation', 'activity_regularizer', 'add_loss', 'add_update', 'add_weight', 'assert_input_compatibility', 'bias_constraint', 'bias_initializer', 'bias_regularizer', 'build', 'built', 'call', 'cell', 'compute_mask', 'compute_output_shape', 'constants_spec', 'count_params', 'dropout', 'from_config', 'get_config', 'get_initial_state', 'get_input_at', 'get_input_mask_at', 'get_input_shape_at', 'get_losses_for', 'get_output_at', 'get_output_mask_at', 'get_output_shape_at', 'get_updates_for', 'get_weights', 'go_backwards', 'implementation', 'input', 'input_mask', 'input_shape', 'input_spec', 'kernel_constraint', 'kernel_initializer', 'kernel_regularizer', 'losses', 'name', 'non_trainable_weights', 'output', 'output_mask', 'output_shape', 'recurrent_activation', 'recurrent_constraint', 'recurrent_dropout', 'recurrent_initializer', 'recurrent_regularizer', 'reset_states', 'return_sequences', 'return_state', 'set_weights', 'state_spec', 'stateful', 'states', 'supports_masking', 'trainable', 'trainable_weights', 'unit_forget_bias', 'units', 'unroll', 'updates', 'use_bias', 'weights']
+<type 'numpy.ndarray'> (441, 100, 63)
+<type 'numpy.ndarray'> (64, 512)
+<type 'numpy.ndarray'> (441, 100, 63)
+<type 'numpy.ndarray'> (64, 512)
+<type 'numpy.ndarray'> (441, 100, 63)
+<type 'numpy.ndarray'> (64, 512)
+<type 'numpy.ndarray'> (441, 100, 63)
+<type 'numpy.ndarray'> (64, 512)
+<type 'numpy.ndarray'> (441, 100, 63)
+<type 'numpy.ndarray'> (64, 512)
+<type 'numpy.ndarray'> (441, 100, 63)
+<type 'numpy.ndarray'> (64, 512)
+<type 'numpy.ndarray'> (441, 100, 63)
+<type 'numpy.ndarray'> (57, 512)
+grads shape: (4414, 512) targets shape: (4414, 2)
+Saved activations and targets to R2192_models/simple_activity_R2192_1x1400_v1

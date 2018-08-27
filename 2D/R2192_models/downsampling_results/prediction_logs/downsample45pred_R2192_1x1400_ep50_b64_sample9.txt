@@ -1,0 +1,55 @@
+Using Theano backend.
+Couldn't import dot_parser, loading of dot files will not be possible.
+Original data: (5404, 63) (5404, 2)
+minX/maxX/meanX/stdX/miny/maxy: 0.0 59.0 0.740248258198 2.35919268164 4.39033 107.044
+(5404, 63)
+random_IDs_45.txt (10, 45) 
+ using indexes (shape,values): (45,) : [39 62  4 47 51 57  0 20 31 43 35 53 27 30 12 16 42 11 46 56  1 18 10 24 17
+ 55 22 58 38 40 32 49  6 13  5  2 28 21  7 14 19 25 45 48 37]
+Creating model...
+--------------------------------------------------------------------------------
+Initial input shape: (64, 100, 45)
+--------------------------------------------------------------------------------
+Layer (name)                  Output Shape                  Param #             
+--------------------------------------------------------------------------------
+LSTM (Unnamed)                (64, 100, 512)                1142784             
+Dropout (Unnamed)             (64, 100, 512)                0                   
+LSTM (Unnamed)                (64, 512)                     2099200             
+Dropout (Unnamed)             (64, 512)                     0                   
+Dense (Unnamed)               (64, 2)                       1026                
+--------------------------------------------------------------------------------
+Total params: 3243010
+--------------------------------------------------------------------------------
+Compiling model...
+test shape: (541, 45) (541, 2)
+After sliding window: (442, 100, 45) (442, 2)
+pred_y: (442, 2)
+test shape: (541, 45) (541, 2)
+After sliding window: (442, 100, 45) (442, 2)
+pred_y: (442, 2)
+test shape: (541, 45) (541, 2)
+After sliding window: (442, 100, 45) (442, 2)
+pred_y: (442, 2)
+test shape: (541, 45) (541, 2)
+After sliding window: (442, 100, 45) (442, 2)
+pred_y: (442, 2)
+test shape: (540, 45) (540, 2)
+After sliding window: (441, 100, 45) (441, 2)
+pred_y: (441, 2)
+test shape: (540, 45) (540, 2)
+After sliding window: (441, 100, 45) (441, 2)
+pred_y: (441, 2)
+test shape: (540, 45) (540, 2)
+After sliding window: (441, 100, 45) (441, 2)
+pred_y: (441, 2)
+test shape: (540, 45) (540, 2)
+After sliding window: (441, 100, 45) (441, 2)
+pred_y: (441, 2)
+test shape: (540, 45) (540, 2)
+After sliding window: (441, 100, 45) (441, 2)
+pred_y: (441, 2)
+test shape: (540, 45) (540, 2)
+After sliding window: (441, 100, 45) (441, 2)
+pred_y: (441, 2)
+preds shape: (4414, 2) targets shape: (4414, 2)
+mse = 166.044, mean dist = 14.6358, median dist = 11.7913

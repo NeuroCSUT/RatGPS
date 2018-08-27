@@ -1,0 +1,1613 @@
+Using Theano backend.
+Couldn't import dot_parser, loading of dot files will not be possible.
+Original data: (5404, 63) (5404, 2)
+minX/maxX/meanX/stdX/miny/maxy: 0.0 59.0 0.740248258198 2.35919268164 4.39033 107.044
+(5404, 63)
+random_IDs_40.txt (10, 40) 
+ using indexes (shape,values): (40,) : [34 59 60 35 30 29 52  0 42 10 17  8  1 33 46 27 47  2 15 13  7 53 41 44 11
+ 39  5 49 14 40 19 26  6  4 43 37 22 32 61 45]
+Creating model...
+--------------------------------------------------------------------------------
+Initial input shape: (64, 100, 40)
+--------------------------------------------------------------------------------
+Layer (name)                  Output Shape                  Param #             
+--------------------------------------------------------------------------------
+LSTM (Unnamed)                (64, 100, 512)                1132544             
+Dropout (Unnamed)             (64, 100, 512)                0                   
+LSTM (Unnamed)                (64, 512)                     2099200             
+Dropout (Unnamed)             (64, 512)                     0                   
+Dense (Unnamed)               (64, 2)                       1026                
+--------------------------------------------------------------------------------
+Total params: 3232770
+--------------------------------------------------------------------------------
+Compiling model...
+<keras.models.Sequential object at 0x2b9d710>
+test size: 541 rest size: 4863
+After sliding window: (442, 100, 40) (442, 2)
+first part size: 0 second part size: 4863
+After sliding window: (4764, 100, 40) (4764, 2)
+test shapes: (442, 100, 40) (442, 2) rest shapes: (4764, 100, 40) (4764, 2)
+Train on 4764 samples, validate on 442 samples
+Epoch 1/50
+33s - loss: 1485.1711 - val_loss: 552.7314
+Epoch 00000: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-1.hdf5
+Epoch 2/50
+33s - loss: 638.5583 - val_loss: 380.5775
+Epoch 00001: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-1.hdf5
+Epoch 3/50
+33s - loss: 231.5895 - val_loss: 401.5326
+Epoch 00002: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-1.hdf5
+Epoch 4/50
+33s - loss: 106.2509 - val_loss: 289.1748
+Epoch 00003: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-1.hdf5
+Epoch 5/50
+33s - loss: 68.2757 - val_loss: 324.7155
+Epoch 00004: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-1.hdf5
+Epoch 6/50
+33s - loss: 56.0133 - val_loss: 233.2824
+Epoch 00005: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-1.hdf5
+Epoch 7/50
+33s - loss: 49.9276 - val_loss: 305.3609
+Epoch 00006: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-1.hdf5
+Epoch 8/50
+33s - loss: 44.6634 - val_loss: 310.1520
+Epoch 00007: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-1.hdf5
+Epoch 9/50
+33s - loss: 42.4341 - val_loss: 264.2796
+Epoch 00008: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-1.hdf5
+Epoch 10/50
+33s - loss: 39.9922 - val_loss: 242.4006
+Epoch 00009: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-1.hdf5
+Epoch 11/50
+33s - loss: 39.0703 - val_loss: 194.9008
+Epoch 00010: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-1.hdf5
+Epoch 12/50
+33s - loss: 37.1878 - val_loss: 231.8158
+Epoch 00011: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-1.hdf5
+Epoch 13/50
+33s - loss: 35.3366 - val_loss: 228.8376
+Epoch 00012: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-1.hdf5
+Epoch 14/50
+33s - loss: 34.0640 - val_loss: 238.8723
+Epoch 00013: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-1.hdf5
+Epoch 15/50
+33s - loss: 34.7351 - val_loss: 217.7262
+Epoch 00014: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-1.hdf5
+Epoch 16/50
+33s - loss: 34.5396 - val_loss: 255.2017
+Epoch 00015: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-1.hdf5
+Epoch 17/50
+33s - loss: 32.7777 - val_loss: 322.4877
+Epoch 00016: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-1.hdf5
+Epoch 18/50
+33s - loss: 30.6000 - val_loss: 232.9929
+Epoch 00017: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-1.hdf5
+Epoch 19/50
+33s - loss: 31.2257 - val_loss: 197.0885
+Epoch 00018: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-1.hdf5
+Epoch 20/50
+33s - loss: 31.5396 - val_loss: 223.1369
+Epoch 00019: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-1.hdf5
+Epoch 21/50
+33s - loss: 30.4392 - val_loss: 188.3899
+Epoch 00020: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-1.hdf5
+Epoch 22/50
+33s - loss: 29.9409 - val_loss: 210.5885
+Epoch 00021: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-1.hdf5
+Epoch 23/50
+33s - loss: 30.2361 - val_loss: 211.3073
+Epoch 00022: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-1.hdf5
+Epoch 24/50
+33s - loss: 29.6515 - val_loss: 280.6283
+Epoch 00023: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-1.hdf5
+Epoch 25/50
+33s - loss: 29.5392 - val_loss: 272.7189
+Epoch 00024: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-1.hdf5
+Epoch 26/50
+33s - loss: 29.5108 - val_loss: 243.9892
+Epoch 00025: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-1.hdf5
+Epoch 27/50
+33s - loss: 28.8805 - val_loss: 252.3403
+Epoch 00026: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-1.hdf5
+Epoch 28/50
+33s - loss: 28.1821 - val_loss: 271.9636
+Epoch 00027: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-1.hdf5
+Epoch 29/50
+33s - loss: 28.2783 - val_loss: 293.0810
+Epoch 00028: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-1.hdf5
+Epoch 30/50
+33s - loss: 26.9961 - val_loss: 256.7756
+Epoch 00029: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-1.hdf5
+Epoch 31/50
+33s - loss: 28.2354 - val_loss: 248.5929
+Epoch 00030: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-1.hdf5
+Epoch 32/50
+33s - loss: 26.8003 - val_loss: 280.5983
+Epoch 00031: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-1.hdf5
+Epoch 33/50
+33s - loss: 26.5881 - val_loss: 289.1983
+Epoch 00032: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-1.hdf5
+Epoch 34/50
+33s - loss: 27.3889 - val_loss: 227.2029
+Epoch 00033: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-1.hdf5
+Epoch 35/50
+33s - loss: 26.0891 - val_loss: 232.4407
+Epoch 00034: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-1.hdf5
+Epoch 36/50
+33s - loss: 26.7414 - val_loss: 230.3628
+Epoch 00035: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-1.hdf5
+Epoch 37/50
+33s - loss: 25.5975 - val_loss: 269.1675
+Epoch 00036: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-1.hdf5
+Epoch 38/50
+33s - loss: 26.6029 - val_loss: 328.0557
+Epoch 00037: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-1.hdf5
+Epoch 39/50
+33s - loss: 26.3028 - val_loss: 238.7294
+Epoch 00038: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-1.hdf5
+Epoch 40/50
+33s - loss: 26.7265 - val_loss: 319.1808
+Epoch 00039: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-1.hdf5
+Epoch 41/50
+33s - loss: 26.2960 - val_loss: 223.2421
+Epoch 00040: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-1.hdf5
+Epoch 42/50
+33s - loss: 25.7100 - val_loss: 239.3545
+Epoch 00041: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-1.hdf5
+Epoch 43/50
+33s - loss: 26.0203 - val_loss: 230.8291
+Epoch 00042: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-1.hdf5
+Epoch 44/50
+33s - loss: 25.8804 - val_loss: 202.5706
+Epoch 00043: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-1.hdf5
+Epoch 45/50
+33s - loss: 26.1826 - val_loss: 382.8554
+Epoch 00044: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-1.hdf5
+Epoch 46/50
+33s - loss: 25.1396 - val_loss: 346.8672
+Epoch 00045: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-1.hdf5
+Epoch 47/50
+33s - loss: 24.4320 - val_loss: 230.9068
+Epoch 00046: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-1.hdf5
+Epoch 48/50
+33s - loss: 24.6852 - val_loss: 209.3583
+Epoch 00047: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-1.hdf5
+Epoch 49/50
+33s - loss: 24.7769 - val_loss: 278.6787
+Epoch 00048: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-1.hdf5
+Epoch 50/50
+33s - loss: 24.9670 - val_loss: 267.9843
+Epoch 00049: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-1.hdf5
+train mse = 5.57338, validation mse = 267.984, test mse = 267.984
+train dist = 2.85284, validation dist = 18.7498, test dist = 18.7498
+test size: 541 rest size: 4863
+After sliding window: (442, 100, 40) (442, 2)
+first part size: 541 second part size: 4322
+After sliding window: (442, 100, 40) (442, 2)
+After sliding window: (4223, 100, 40) (4223, 2)
+test shapes: (442, 100, 40) (442, 2) rest shapes: (4665, 100, 40) (4665, 2)
+Train on 4665 samples, validate on 442 samples
+Epoch 1/50
+32s - loss: 1450.7657 - val_loss: 961.3215
+Epoch 00000: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-2.hdf5
+Epoch 2/50
+32s - loss: 644.0571 - val_loss: 466.3569
+Epoch 00001: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-2.hdf5
+Epoch 3/50
+32s - loss: 263.3864 - val_loss: 275.0322
+Epoch 00002: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-2.hdf5
+Epoch 4/50
+32s - loss: 115.2540 - val_loss: 229.7468
+Epoch 00003: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-2.hdf5
+Epoch 5/50
+32s - loss: 72.6107 - val_loss: 363.8386
+Epoch 00004: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-2.hdf5
+Epoch 6/50
+32s - loss: 57.4819 - val_loss: 249.6644
+Epoch 00005: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-2.hdf5
+Epoch 7/50
+32s - loss: 49.7077 - val_loss: 215.4065
+Epoch 00006: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-2.hdf5
+Epoch 8/50
+32s - loss: 43.5964 - val_loss: 239.1309
+Epoch 00007: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-2.hdf5
+Epoch 9/50
+32s - loss: 42.6002 - val_loss: 199.0642
+Epoch 00008: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-2.hdf5
+Epoch 10/50
+32s - loss: 38.6976 - val_loss: 272.0052
+Epoch 00009: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-2.hdf5
+Epoch 11/50
+32s - loss: 38.7119 - val_loss: 234.2274
+Epoch 00010: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-2.hdf5
+Epoch 12/50
+32s - loss: 36.7313 - val_loss: 211.9616
+Epoch 00011: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-2.hdf5
+Epoch 13/50
+32s - loss: 37.0407 - val_loss: 205.3058
+Epoch 00012: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-2.hdf5
+Epoch 14/50
+32s - loss: 34.5084 - val_loss: 220.3320
+Epoch 00013: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-2.hdf5
+Epoch 15/50
+32s - loss: 33.8634 - val_loss: 242.2023
+Epoch 00014: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-2.hdf5
+Epoch 16/50
+32s - loss: 33.8671 - val_loss: 232.8386
+Epoch 00015: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-2.hdf5
+Epoch 17/50
+32s - loss: 34.1586 - val_loss: 199.1011
+Epoch 00016: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-2.hdf5
+Epoch 18/50
+32s - loss: 32.2126 - val_loss: 189.0214
+Epoch 00017: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-2.hdf5
+Epoch 19/50
+32s - loss: 31.6495 - val_loss: 235.3452
+Epoch 00018: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-2.hdf5
+Epoch 20/50
+32s - loss: 32.0834 - val_loss: 218.1610
+Epoch 00019: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-2.hdf5
+Epoch 21/50
+32s - loss: 31.7073 - val_loss: 217.7416
+Epoch 00020: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-2.hdf5
+Epoch 22/50
+32s - loss: 30.8290 - val_loss: 221.7829
+Epoch 00021: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-2.hdf5
+Epoch 23/50
+32s - loss: 30.3829 - val_loss: 181.4814
+Epoch 00022: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-2.hdf5
+Epoch 24/50
+32s - loss: 29.3531 - val_loss: 213.5634
+Epoch 00023: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-2.hdf5
+Epoch 25/50
+32s - loss: 29.9569 - val_loss: 180.7498
+Epoch 00024: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-2.hdf5
+Epoch 26/50
+32s - loss: 29.0173 - val_loss: 248.5403
+Epoch 00025: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-2.hdf5
+Epoch 27/50
+32s - loss: 28.7044 - val_loss: 225.0334
+Epoch 00026: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-2.hdf5
+Epoch 28/50
+32s - loss: 28.0125 - val_loss: 271.4699
+Epoch 00027: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-2.hdf5
+Epoch 29/50
+32s - loss: 27.2066 - val_loss: 244.3522
+Epoch 00028: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-2.hdf5
+Epoch 30/50
+32s - loss: 28.1342 - val_loss: 193.6278
+Epoch 00029: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-2.hdf5
+Epoch 31/50
+32s - loss: 27.3372 - val_loss: 203.2570
+Epoch 00030: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-2.hdf5
+Epoch 32/50
+32s - loss: 27.4718 - val_loss: 220.3568
+Epoch 00031: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-2.hdf5
+Epoch 33/50
+32s - loss: 27.0117 - val_loss: 305.4762
+Epoch 00032: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-2.hdf5
+Epoch 34/50
+32s - loss: 26.6663 - val_loss: 235.4677
+Epoch 00033: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-2.hdf5
+Epoch 35/50
+32s - loss: 27.4898 - val_loss: 313.8079
+Epoch 00034: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-2.hdf5
+Epoch 36/50
+32s - loss: 27.2754 - val_loss: 262.2347
+Epoch 00035: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-2.hdf5
+Epoch 37/50
+32s - loss: 27.1727 - val_loss: 267.3562
+Epoch 00036: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-2.hdf5
+Epoch 38/50
+32s - loss: 27.4566 - val_loss: 191.7669
+Epoch 00037: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-2.hdf5
+Epoch 39/50
+32s - loss: 26.6201 - val_loss: 217.8118
+Epoch 00038: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-2.hdf5
+Epoch 40/50
+32s - loss: 26.2234 - val_loss: 209.7157
+Epoch 00039: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-2.hdf5
+Epoch 41/50
+32s - loss: 26.1447 - val_loss: 228.3655
+Epoch 00040: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-2.hdf5
+Epoch 42/50
+32s - loss: 26.3705 - val_loss: 227.2823
+Epoch 00041: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-2.hdf5
+Epoch 43/50
+32s - loss: 25.9692 - val_loss: 199.9132
+Epoch 00042: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-2.hdf5
+Epoch 44/50
+32s - loss: 25.2015 - val_loss: 184.9482
+Epoch 00043: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-2.hdf5
+Epoch 45/50
+32s - loss: 25.5872 - val_loss: 217.3937
+Epoch 00044: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-2.hdf5
+Epoch 46/50
+32s - loss: 25.7863 - val_loss: 233.6631
+Epoch 00045: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-2.hdf5
+Epoch 47/50
+32s - loss: 25.6347 - val_loss: 252.5119
+Epoch 00046: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-2.hdf5
+Epoch 48/50
+32s - loss: 25.1163 - val_loss: 199.5777
+Epoch 00047: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-2.hdf5
+Epoch 49/50
+32s - loss: 24.7934 - val_loss: 243.9059
+Epoch 00048: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-2.hdf5
+Epoch 50/50
+32s - loss: 24.9029 - val_loss: 222.4999
+Epoch 00049: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-2.hdf5
+train mse = 6.89043, validation mse = 222.5, test mse = 222.5
+train dist = 3.22999, validation dist = 17.3862, test dist = 17.3862
+test size: 541 rest size: 4863
+After sliding window: (442, 100, 40) (442, 2)
+first part size: 1082 second part size: 3781
+After sliding window: (983, 100, 40) (983, 2)
+After sliding window: (3682, 100, 40) (3682, 2)
+test shapes: (442, 100, 40) (442, 2) rest shapes: (4665, 100, 40) (4665, 2)
+Train on 4665 samples, validate on 442 samples
+Epoch 1/50
+32s - loss: 1457.5707 - val_loss: 936.7971
+Epoch 00000: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-3.hdf5
+Epoch 2/50
+32s - loss: 687.7399 - val_loss: 526.1848
+Epoch 00001: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-3.hdf5
+Epoch 3/50
+32s - loss: 297.5517 - val_loss: 336.1450
+Epoch 00002: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-3.hdf5
+Epoch 4/50
+32s - loss: 126.3707 - val_loss: 253.8407
+Epoch 00003: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-3.hdf5
+Epoch 5/50
+32s - loss: 76.3844 - val_loss: 250.1424
+Epoch 00004: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-3.hdf5
+Epoch 6/50
+32s - loss: 58.5243 - val_loss: 185.2260
+Epoch 00005: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-3.hdf5
+Epoch 7/50
+32s - loss: 51.1193 - val_loss: 239.9340
+Epoch 00006: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-3.hdf5
+Epoch 8/50
+32s - loss: 47.3949 - val_loss: 248.8924
+Epoch 00007: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-3.hdf5
+Epoch 9/50
+32s - loss: 43.5296 - val_loss: 205.1717
+Epoch 00008: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-3.hdf5
+Epoch 10/50
+32s - loss: 39.3277 - val_loss: 170.3952
+Epoch 00009: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-3.hdf5
+Epoch 11/50
+32s - loss: 39.8831 - val_loss: 237.1412
+Epoch 00010: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-3.hdf5
+Epoch 12/50
+32s - loss: 36.2593 - val_loss: 209.7203
+Epoch 00011: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-3.hdf5
+Epoch 13/50
+32s - loss: 35.6967 - val_loss: 166.9473
+Epoch 00012: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-3.hdf5
+Epoch 14/50
+32s - loss: 35.3094 - val_loss: 180.6746
+Epoch 00013: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-3.hdf5
+Epoch 15/50
+32s - loss: 33.0331 - val_loss: 191.8651
+Epoch 00014: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-3.hdf5
+Epoch 16/50
+32s - loss: 33.9612 - val_loss: 171.2205
+Epoch 00015: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-3.hdf5
+Epoch 17/50
+32s - loss: 33.5001 - val_loss: 183.2254
+Epoch 00016: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-3.hdf5
+Epoch 18/50
+32s - loss: 31.5031 - val_loss: 218.9520
+Epoch 00017: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-3.hdf5
+Epoch 19/50
+32s - loss: 31.5802 - val_loss: 193.4108
+Epoch 00018: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-3.hdf5
+Epoch 20/50
+32s - loss: 30.7736 - val_loss: 179.7336
+Epoch 00019: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-3.hdf5
+Epoch 21/50
+32s - loss: 29.6829 - val_loss: 191.1255
+Epoch 00020: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-3.hdf5
+Epoch 22/50
+32s - loss: 30.1250 - val_loss: 203.4501
+Epoch 00021: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-3.hdf5
+Epoch 23/50
+32s - loss: 30.8597 - val_loss: 188.7263
+Epoch 00022: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-3.hdf5
+Epoch 24/50
+32s - loss: 30.4138 - val_loss: 152.1339
+Epoch 00023: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-3.hdf5
+Epoch 25/50
+32s - loss: 29.0190 - val_loss: 191.2714
+Epoch 00024: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-3.hdf5
+Epoch 26/50
+32s - loss: 29.0240 - val_loss: 168.1707
+Epoch 00025: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-3.hdf5
+Epoch 27/50
+32s - loss: 29.2129 - val_loss: 179.6173
+Epoch 00026: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-3.hdf5
+Epoch 28/50
+32s - loss: 28.7703 - val_loss: 162.8557
+Epoch 00027: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-3.hdf5
+Epoch 29/50
+32s - loss: 28.7735 - val_loss: 138.0764
+Epoch 00028: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-3.hdf5
+Epoch 30/50
+32s - loss: 27.4891 - val_loss: 190.3468
+Epoch 00029: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-3.hdf5
+Epoch 31/50
+32s - loss: 27.1875 - val_loss: 185.2997
+Epoch 00030: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-3.hdf5
+Epoch 32/50
+32s - loss: 27.2169 - val_loss: 184.5939
+Epoch 00031: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-3.hdf5
+Epoch 33/50
+32s - loss: 27.1188 - val_loss: 162.9586
+Epoch 00032: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-3.hdf5
+Epoch 34/50
+32s - loss: 26.1948 - val_loss: 175.5355
+Epoch 00033: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-3.hdf5
+Epoch 35/50
+32s - loss: 27.0336 - val_loss: 193.6727
+Epoch 00034: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-3.hdf5
+Epoch 36/50
+32s - loss: 26.2641 - val_loss: 185.9483
+Epoch 00035: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-3.hdf5
+Epoch 37/50
+32s - loss: 27.0192 - val_loss: 156.7220
+Epoch 00036: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-3.hdf5
+Epoch 38/50
+32s - loss: 27.2625 - val_loss: 154.4228
+Epoch 00037: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-3.hdf5
+Epoch 39/50
+32s - loss: 26.3464 - val_loss: 160.7204
+Epoch 00038: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-3.hdf5
+Epoch 40/50
+32s - loss: 26.0190 - val_loss: 163.3223
+Epoch 00039: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-3.hdf5
+Epoch 41/50
+32s - loss: 27.1865 - val_loss: 192.5906
+Epoch 00040: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-3.hdf5
+Epoch 42/50
+32s - loss: 25.4374 - val_loss: 162.7611
+Epoch 00041: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-3.hdf5
+Epoch 43/50
+32s - loss: 25.8189 - val_loss: 177.0223
+Epoch 00042: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-3.hdf5
+Epoch 44/50
+32s - loss: 27.1970 - val_loss: 160.3278
+Epoch 00043: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-3.hdf5
+Epoch 45/50
+32s - loss: 25.5073 - val_loss: 162.7356
+Epoch 00044: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-3.hdf5
+Epoch 46/50
+32s - loss: 25.7285 - val_loss: 168.4784
+Epoch 00045: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-3.hdf5
+Epoch 47/50
+32s - loss: 25.3224 - val_loss: 178.0733
+Epoch 00046: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-3.hdf5
+Epoch 48/50
+32s - loss: 25.1464 - val_loss: 172.9894
+Epoch 00047: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-3.hdf5
+Epoch 49/50
+32s - loss: 25.5713 - val_loss: 180.0541
+Epoch 00048: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-3.hdf5
+Epoch 50/50
+32s - loss: 25.1856 - val_loss: 197.1074
+Epoch 00049: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-3.hdf5
+train mse = 7.16066, validation mse = 197.107, test mse = 197.107
+train dist = 3.26812, validation dist = 15.6769, test dist = 15.6769
+test size: 541 rest size: 4863
+After sliding window: (442, 100, 40) (442, 2)
+first part size: 1623 second part size: 3240
+After sliding window: (1524, 100, 40) (1524, 2)
+After sliding window: (3141, 100, 40) (3141, 2)
+test shapes: (442, 100, 40) (442, 2) rest shapes: (4665, 100, 40) (4665, 2)
+Train on 4665 samples, validate on 442 samples
+Epoch 1/50
+32s - loss: 1451.9509 - val_loss: 565.8877
+Epoch 00000: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-4.hdf5
+Epoch 2/50
+32s - loss: 614.2039 - val_loss: 348.7640
+Epoch 00001: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-4.hdf5
+Epoch 3/50
+32s - loss: 256.5668 - val_loss: 215.2882
+Epoch 00002: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-4.hdf5
+Epoch 4/50
+32s - loss: 113.2245 - val_loss: 198.4124
+Epoch 00003: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-4.hdf5
+Epoch 5/50
+32s - loss: 71.3498 - val_loss: 174.3886
+Epoch 00004: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-4.hdf5
+Epoch 6/50
+32s - loss: 56.6895 - val_loss: 157.8316
+Epoch 00005: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-4.hdf5
+Epoch 7/50
+32s - loss: 51.5693 - val_loss: 159.6632
+Epoch 00006: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-4.hdf5
+Epoch 8/50
+32s - loss: 45.8788 - val_loss: 180.6717
+Epoch 00007: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-4.hdf5
+Epoch 9/50
+32s - loss: 41.1731 - val_loss: 175.0010
+Epoch 00008: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-4.hdf5
+Epoch 10/50
+32s - loss: 39.4986 - val_loss: 233.9867
+Epoch 00009: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-4.hdf5
+Epoch 11/50
+32s - loss: 38.8380 - val_loss: 195.5787
+Epoch 00010: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-4.hdf5
+Epoch 12/50
+32s - loss: 36.8917 - val_loss: 257.7363
+Epoch 00011: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-4.hdf5
+Epoch 13/50
+32s - loss: 37.0170 - val_loss: 207.4330
+Epoch 00012: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-4.hdf5
+Epoch 14/50
+32s - loss: 34.6271 - val_loss: 208.2141
+Epoch 00013: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-4.hdf5
+Epoch 15/50
+32s - loss: 33.8397 - val_loss: 188.2215
+Epoch 00014: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-4.hdf5
+Epoch 16/50
+32s - loss: 33.2728 - val_loss: 191.8101
+Epoch 00015: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-4.hdf5
+Epoch 17/50
+32s - loss: 33.2248 - val_loss: 193.4100
+Epoch 00016: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-4.hdf5
+Epoch 18/50
+32s - loss: 32.4383 - val_loss: 202.4849
+Epoch 00017: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-4.hdf5
+Epoch 19/50
+32s - loss: 32.0049 - val_loss: 189.9534
+Epoch 00018: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-4.hdf5
+Epoch 20/50
+32s - loss: 31.7042 - val_loss: 159.4816
+Epoch 00019: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-4.hdf5
+Epoch 21/50
+32s - loss: 31.5844 - val_loss: 173.3044
+Epoch 00020: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-4.hdf5
+Epoch 22/50
+32s - loss: 30.3209 - val_loss: 182.7788
+Epoch 00021: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-4.hdf5
+Epoch 23/50
+32s - loss: 33.7635 - val_loss: 182.4403
+Epoch 00022: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-4.hdf5
+Epoch 24/50
+32s - loss: 29.9341 - val_loss: 193.2233
+Epoch 00023: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-4.hdf5
+Epoch 25/50
+32s - loss: 28.8286 - val_loss: 176.1985
+Epoch 00024: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-4.hdf5
+Epoch 26/50
+32s - loss: 29.0742 - val_loss: 169.0056
+Epoch 00025: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-4.hdf5
+Epoch 27/50
+32s - loss: 29.0726 - val_loss: 202.1919
+Epoch 00026: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-4.hdf5
+Epoch 28/50
+32s - loss: 29.2810 - val_loss: 190.3917
+Epoch 00027: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-4.hdf5
+Epoch 29/50
+32s - loss: 28.6177 - val_loss: 212.5269
+Epoch 00028: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-4.hdf5
+Epoch 30/50
+32s - loss: 27.7900 - val_loss: 174.4458
+Epoch 00029: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-4.hdf5
+Epoch 31/50
+32s - loss: 27.8194 - val_loss: 184.1229
+Epoch 00030: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-4.hdf5
+Epoch 32/50
+32s - loss: 26.4954 - val_loss: 195.7049
+Epoch 00031: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-4.hdf5
+Epoch 33/50
+32s - loss: 27.1891 - val_loss: 188.0405
+Epoch 00032: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-4.hdf5
+Epoch 34/50
+32s - loss: 26.9143 - val_loss: 160.2651
+Epoch 00033: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-4.hdf5
+Epoch 35/50
+32s - loss: 27.1503 - val_loss: 213.4469
+Epoch 00034: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-4.hdf5
+Epoch 36/50
+32s - loss: 27.0804 - val_loss: 164.4657
+Epoch 00035: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-4.hdf5
+Epoch 37/50
+32s - loss: 26.0667 - val_loss: 189.6475
+Epoch 00036: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-4.hdf5
+Epoch 38/50
+32s - loss: 26.4702 - val_loss: 188.8432
+Epoch 00037: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-4.hdf5
+Epoch 39/50
+32s - loss: 26.9996 - val_loss: 177.7150
+Epoch 00038: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-4.hdf5
+Epoch 40/50
+32s - loss: 25.7311 - val_loss: 194.3895
+Epoch 00039: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-4.hdf5
+Epoch 41/50
+32s - loss: 25.5900 - val_loss: 200.8023
+Epoch 00040: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-4.hdf5
+Epoch 42/50
+32s - loss: 25.8087 - val_loss: 206.1856
+Epoch 00041: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-4.hdf5
+Epoch 43/50
+32s - loss: 25.6005 - val_loss: 197.2302
+Epoch 00042: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-4.hdf5
+Epoch 44/50
+32s - loss: 25.9606 - val_loss: 171.8461
+Epoch 00043: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-4.hdf5
+Epoch 45/50
+32s - loss: 25.8462 - val_loss: 188.9202
+Epoch 00044: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-4.hdf5
+Epoch 46/50
+32s - loss: 25.9041 - val_loss: 181.5934
+Epoch 00045: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-4.hdf5
+Epoch 47/50
+32s - loss: 25.4469 - val_loss: 189.7952
+Epoch 00046: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-4.hdf5
+Epoch 48/50
+32s - loss: 26.0184 - val_loss: 202.6922
+Epoch 00047: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-4.hdf5
+Epoch 49/50
+32s - loss: 24.6770 - val_loss: 202.3260
+Epoch 00048: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-4.hdf5
+Epoch 50/50
+32s - loss: 25.3877 - val_loss: 185.5993
+Epoch 00049: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-4.hdf5
+train mse = 5.58344, validation mse = 185.599, test mse = 185.599
+train dist = 2.88699, validation dist = 16.4913, test dist = 16.4913
+test size: 540 rest size: 4864
+After sliding window: (441, 100, 40) (441, 2)
+first part size: 2164 second part size: 2700
+After sliding window: (2065, 100, 40) (2065, 2)
+After sliding window: (2601, 100, 40) (2601, 2)
+test shapes: (441, 100, 40) (441, 2) rest shapes: (4666, 100, 40) (4666, 2)
+Train on 4666 samples, validate on 441 samples
+Epoch 1/50
+32s - loss: 1491.6299 - val_loss: 945.3386
+Epoch 00000: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-5.hdf5
+Epoch 2/50
+32s - loss: 627.2058 - val_loss: 525.5405
+Epoch 00001: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-5.hdf5
+Epoch 3/50
+32s - loss: 245.3012 - val_loss: 300.3456
+Epoch 00002: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-5.hdf5
+Epoch 4/50
+32s - loss: 114.0701 - val_loss: 164.1929
+Epoch 00003: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-5.hdf5
+Epoch 5/50
+32s - loss: 69.5696 - val_loss: 139.4868
+Epoch 00004: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-5.hdf5
+Epoch 6/50
+32s - loss: 56.0098 - val_loss: 102.4185
+Epoch 00005: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-5.hdf5
+Epoch 7/50
+32s - loss: 49.1916 - val_loss: 127.4648
+Epoch 00006: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-5.hdf5
+Epoch 8/50
+32s - loss: 45.2686 - val_loss: 152.0884
+Epoch 00007: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-5.hdf5
+Epoch 9/50
+32s - loss: 43.4763 - val_loss: 102.1184
+Epoch 00008: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-5.hdf5
+Epoch 10/50
+32s - loss: 39.5809 - val_loss: 109.7006
+Epoch 00009: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-5.hdf5
+Epoch 11/50
+32s - loss: 38.9662 - val_loss: 111.8495
+Epoch 00010: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-5.hdf5
+Epoch 12/50
+32s - loss: 37.5736 - val_loss: 82.1715
+Epoch 00011: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-5.hdf5
+Epoch 13/50
+32s - loss: 35.4616 - val_loss: 88.2169
+Epoch 00012: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-5.hdf5
+Epoch 14/50
+32s - loss: 37.3987 - val_loss: 135.1373
+Epoch 00013: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-5.hdf5
+Epoch 15/50
+32s - loss: 35.4219 - val_loss: 89.8968
+Epoch 00014: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-5.hdf5
+Epoch 16/50
+32s - loss: 34.4731 - val_loss: 103.0709
+Epoch 00015: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-5.hdf5
+Epoch 17/50
+32s - loss: 34.1000 - val_loss: 95.2995
+Epoch 00016: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-5.hdf5
+Epoch 18/50
+32s - loss: 33.5039 - val_loss: 99.9579
+Epoch 00017: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-5.hdf5
+Epoch 19/50
+32s - loss: 31.1264 - val_loss: 98.8131
+Epoch 00018: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-5.hdf5
+Epoch 20/50
+32s - loss: 31.9560 - val_loss: 94.8274
+Epoch 00019: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-5.hdf5
+Epoch 21/50
+32s - loss: 32.1531 - val_loss: 94.7904
+Epoch 00020: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-5.hdf5
+Epoch 22/50
+32s - loss: 31.9248 - val_loss: 100.5799
+Epoch 00021: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-5.hdf5
+Epoch 23/50
+32s - loss: 31.7778 - val_loss: 96.8757
+Epoch 00022: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-5.hdf5
+Epoch 24/50
+32s - loss: 30.9243 - val_loss: 83.9795
+Epoch 00023: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-5.hdf5
+Epoch 25/50
+32s - loss: 29.9555 - val_loss: 88.5277
+Epoch 00024: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-5.hdf5
+Epoch 26/50
+32s - loss: 30.1208 - val_loss: 101.3084
+Epoch 00025: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-5.hdf5
+Epoch 27/50
+32s - loss: 29.7768 - val_loss: 115.0168
+Epoch 00026: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-5.hdf5
+Epoch 28/50
+32s - loss: 28.9858 - val_loss: 81.8770
+Epoch 00027: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-5.hdf5
+Epoch 29/50
+32s - loss: 27.7765 - val_loss: 88.5730
+Epoch 00028: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-5.hdf5
+Epoch 30/50
+32s - loss: 28.0136 - val_loss: 91.4035
+Epoch 00029: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-5.hdf5
+Epoch 31/50
+32s - loss: 28.7602 - val_loss: 86.6712
+Epoch 00030: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-5.hdf5
+Epoch 32/50
+32s - loss: 28.4061 - val_loss: 91.7099
+Epoch 00031: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-5.hdf5
+Epoch 33/50
+32s - loss: 27.7237 - val_loss: 85.7779
+Epoch 00032: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-5.hdf5
+Epoch 34/50
+32s - loss: 26.8559 - val_loss: 88.9276
+Epoch 00033: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-5.hdf5
+Epoch 35/50
+32s - loss: 27.3726 - val_loss: 98.6332
+Epoch 00034: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-5.hdf5
+Epoch 36/50
+32s - loss: 27.6229 - val_loss: 107.6395
+Epoch 00035: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-5.hdf5
+Epoch 37/50
+32s - loss: 26.8319 - val_loss: 94.1114
+Epoch 00036: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-5.hdf5
+Epoch 38/50
+32s - loss: 27.4543 - val_loss: 107.3204
+Epoch 00037: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-5.hdf5
+Epoch 39/50
+32s - loss: 26.8116 - val_loss: 85.9789
+Epoch 00038: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-5.hdf5
+Epoch 40/50
+32s - loss: 26.2855 - val_loss: 100.8711
+Epoch 00039: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-5.hdf5
+Epoch 41/50
+32s - loss: 27.1088 - val_loss: 88.8849
+Epoch 00040: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-5.hdf5
+Epoch 42/50
+32s - loss: 26.1251 - val_loss: 120.2829
+Epoch 00041: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-5.hdf5
+Epoch 43/50
+32s - loss: 26.2052 - val_loss: 91.6137
+Epoch 00042: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-5.hdf5
+Epoch 44/50
+32s - loss: 26.0248 - val_loss: 93.8817
+Epoch 00043: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-5.hdf5
+Epoch 45/50
+32s - loss: 25.8536 - val_loss: 87.0607
+Epoch 00044: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-5.hdf5
+Epoch 46/50
+32s - loss: 25.2357 - val_loss: 102.3511
+Epoch 00045: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-5.hdf5
+Epoch 47/50
+32s - loss: 26.4141 - val_loss: 103.9853
+Epoch 00046: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-5.hdf5
+Epoch 48/50
+32s - loss: 26.4278 - val_loss: 100.8364
+Epoch 00047: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-5.hdf5
+Epoch 49/50
+32s - loss: 25.2556 - val_loss: 91.4258
+Epoch 00048: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-5.hdf5
+Epoch 50/50
+32s - loss: 25.4867 - val_loss: 92.8490
+Epoch 00049: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-5.hdf5
+train mse = 6.26275, validation mse = 92.849, test mse = 92.849
+train dist = 3.0369, validation dist = 11.324, test dist = 11.324
+test size: 540 rest size: 4864
+After sliding window: (441, 100, 40) (441, 2)
+first part size: 2704 second part size: 2160
+After sliding window: (2605, 100, 40) (2605, 2)
+After sliding window: (2061, 100, 40) (2061, 2)
+test shapes: (441, 100, 40) (441, 2) rest shapes: (4666, 100, 40) (4666, 2)
+Train on 4666 samples, validate on 441 samples
+Epoch 1/50
+32s - loss: 1455.5988 - val_loss: 1020.2401
+Epoch 00000: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-6.hdf5
+Epoch 2/50
+32s - loss: 658.5422 - val_loss: 550.4056
+Epoch 00001: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-6.hdf5
+Epoch 3/50
+32s - loss: 290.4356 - val_loss: 286.1908
+Epoch 00002: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-6.hdf5
+Epoch 4/50
+32s - loss: 128.9009 - val_loss: 203.8679
+Epoch 00003: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-6.hdf5
+Epoch 5/50
+32s - loss: 75.1956 - val_loss: 179.2577
+Epoch 00004: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-6.hdf5
+Epoch 6/50
+32s - loss: 59.4284 - val_loss: 154.5794
+Epoch 00005: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-6.hdf5
+Epoch 7/50
+32s - loss: 50.3620 - val_loss: 158.3772
+Epoch 00006: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-6.hdf5
+Epoch 8/50
+32s - loss: 46.8896 - val_loss: 147.7841
+Epoch 00007: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-6.hdf5
+Epoch 9/50
+32s - loss: 43.5929 - val_loss: 164.9491
+Epoch 00008: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-6.hdf5
+Epoch 10/50
+32s - loss: 39.9011 - val_loss: 151.8514
+Epoch 00009: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-6.hdf5
+Epoch 11/50
+32s - loss: 38.6580 - val_loss: 209.1339
+Epoch 00010: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-6.hdf5
+Epoch 12/50
+32s - loss: 37.4241 - val_loss: 205.5397
+Epoch 00011: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-6.hdf5
+Epoch 13/50
+32s - loss: 37.3726 - val_loss: 181.1865
+Epoch 00012: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-6.hdf5
+Epoch 14/50
+32s - loss: 34.6941 - val_loss: 151.9374
+Epoch 00013: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-6.hdf5
+Epoch 15/50
+32s - loss: 35.0198 - val_loss: 199.1264
+Epoch 00014: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-6.hdf5
+Epoch 16/50
+32s - loss: 33.6814 - val_loss: 152.9715
+Epoch 00015: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-6.hdf5
+Epoch 17/50
+32s - loss: 33.3028 - val_loss: 193.1304
+Epoch 00016: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-6.hdf5
+Epoch 18/50
+32s - loss: 31.5731 - val_loss: 208.1005
+Epoch 00017: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-6.hdf5
+Epoch 19/50
+32s - loss: 38.7568 - val_loss: 199.0387
+Epoch 00018: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-6.hdf5
+Epoch 20/50
+32s - loss: 31.2332 - val_loss: 166.2020
+Epoch 00019: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-6.hdf5
+Epoch 21/50
+32s - loss: 31.2912 - val_loss: 176.2449
+Epoch 00020: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-6.hdf5
+Epoch 22/50
+32s - loss: 30.2390 - val_loss: 137.0628
+Epoch 00021: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-6.hdf5
+Epoch 23/50
+32s - loss: 30.8595 - val_loss: 140.0481
+Epoch 00022: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-6.hdf5
+Epoch 24/50
+32s - loss: 29.1909 - val_loss: 151.7122
+Epoch 00023: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-6.hdf5
+Epoch 25/50
+32s - loss: 29.9574 - val_loss: 139.1602
+Epoch 00024: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-6.hdf5
+Epoch 26/50
+32s - loss: 28.7998 - val_loss: 147.0220
+Epoch 00025: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-6.hdf5
+Epoch 27/50
+32s - loss: 29.8430 - val_loss: 142.8505
+Epoch 00026: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-6.hdf5
+Epoch 28/50
+32s - loss: 29.1587 - val_loss: 141.7490
+Epoch 00027: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-6.hdf5
+Epoch 29/50
+32s - loss: 28.0650 - val_loss: 146.2695
+Epoch 00028: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-6.hdf5
+Epoch 30/50
+32s - loss: 29.5301 - val_loss: 140.0084
+Epoch 00029: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-6.hdf5
+Epoch 31/50
+32s - loss: 28.6023 - val_loss: 127.1773
+Epoch 00030: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-6.hdf5
+Epoch 32/50
+32s - loss: 28.5442 - val_loss: 128.7302
+Epoch 00031: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-6.hdf5
+Epoch 33/50
+32s - loss: 28.3667 - val_loss: 130.9129
+Epoch 00032: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-6.hdf5
+Epoch 34/50
+32s - loss: 26.7736 - val_loss: 143.2480
+Epoch 00033: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-6.hdf5
+Epoch 35/50
+32s - loss: 28.2879 - val_loss: 132.4159
+Epoch 00034: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-6.hdf5
+Epoch 36/50
+32s - loss: 26.8849 - val_loss: 130.9204
+Epoch 00035: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-6.hdf5
+Epoch 37/50
+32s - loss: 27.1161 - val_loss: 156.6780
+Epoch 00036: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-6.hdf5
+Epoch 38/50
+32s - loss: 27.1043 - val_loss: 149.3552
+Epoch 00037: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-6.hdf5
+Epoch 39/50
+32s - loss: 26.1548 - val_loss: 130.4760
+Epoch 00038: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-6.hdf5
+Epoch 40/50
+32s - loss: 25.7178 - val_loss: 146.3006
+Epoch 00039: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-6.hdf5
+Epoch 41/50
+32s - loss: 26.9592 - val_loss: 147.7838
+Epoch 00040: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-6.hdf5
+Epoch 42/50
+32s - loss: 25.3653 - val_loss: 150.3091
+Epoch 00041: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-6.hdf5
+Epoch 43/50
+32s - loss: 25.3014 - val_loss: 149.7735
+Epoch 00042: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-6.hdf5
+Epoch 44/50
+32s - loss: 25.0523 - val_loss: 134.9692
+Epoch 00043: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-6.hdf5
+Epoch 45/50
+32s - loss: 24.8544 - val_loss: 148.8511
+Epoch 00044: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-6.hdf5
+Epoch 46/50
+32s - loss: 24.3663 - val_loss: 144.3135
+Epoch 00045: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-6.hdf5
+Epoch 47/50
+32s - loss: 25.5869 - val_loss: 144.0006
+Epoch 00046: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-6.hdf5
+Epoch 48/50
+32s - loss: 25.0874 - val_loss: 144.4100
+Epoch 00047: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-6.hdf5
+Epoch 49/50
+32s - loss: 24.7840 - val_loss: 136.9809
+Epoch 00048: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-6.hdf5
+Epoch 50/50
+32s - loss: 24.2641 - val_loss: 154.8367
+Epoch 00049: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-6.hdf5
+train mse = 4.97683, validation mse = 154.837, test mse = 154.837
+train dist = 2.70941, validation dist = 14.1725, test dist = 14.1725
+test size: 540 rest size: 4864
+After sliding window: (441, 100, 40) (441, 2)
+first part size: 3244 second part size: 1620
+After sliding window: (3145, 100, 40) (3145, 2)
+After sliding window: (1521, 100, 40) (1521, 2)
+test shapes: (441, 100, 40) (441, 2) rest shapes: (4666, 100, 40) (4666, 2)
+Train on 4666 samples, validate on 441 samples
+Epoch 1/50
+32s - loss: 1486.9696 - val_loss: 944.1858
+Epoch 00000: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-7.hdf5
+Epoch 2/50
+32s - loss: 662.5527 - val_loss: 582.3417
+Epoch 00001: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-7.hdf5
+Epoch 3/50
+32s - loss: 300.3058 - val_loss: 265.0326
+Epoch 00002: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-7.hdf5
+Epoch 4/50
+32s - loss: 134.9678 - val_loss: 199.2376
+Epoch 00003: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-7.hdf5
+Epoch 5/50
+32s - loss: 80.2420 - val_loss: 191.0454
+Epoch 00004: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-7.hdf5
+Epoch 6/50
+32s - loss: 59.6465 - val_loss: 182.2218
+Epoch 00005: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-7.hdf5
+Epoch 7/50
+32s - loss: 53.0842 - val_loss: 171.5119
+Epoch 00006: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-7.hdf5
+Epoch 8/50
+32s - loss: 46.1767 - val_loss: 173.0206
+Epoch 00007: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-7.hdf5
+Epoch 9/50
+32s - loss: 43.5536 - val_loss: 179.1183
+Epoch 00008: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-7.hdf5
+Epoch 10/50
+32s - loss: 41.5198 - val_loss: 176.5540
+Epoch 00009: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-7.hdf5
+Epoch 11/50
+32s - loss: 38.9881 - val_loss: 154.6324
+Epoch 00010: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-7.hdf5
+Epoch 12/50
+32s - loss: 38.1326 - val_loss: 171.0475
+Epoch 00011: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-7.hdf5
+Epoch 13/50
+32s - loss: 35.0790 - val_loss: 154.9987
+Epoch 00012: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-7.hdf5
+Epoch 14/50
+32s - loss: 34.6694 - val_loss: 157.8855
+Epoch 00013: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-7.hdf5
+Epoch 15/50
+32s - loss: 34.8136 - val_loss: 143.1790
+Epoch 00014: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-7.hdf5
+Epoch 16/50
+32s - loss: 33.7072 - val_loss: 151.1368
+Epoch 00015: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-7.hdf5
+Epoch 17/50
+32s - loss: 32.4853 - val_loss: 153.7340
+Epoch 00016: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-7.hdf5
+Epoch 18/50
+32s - loss: 32.6595 - val_loss: 157.5197
+Epoch 00017: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-7.hdf5
+Epoch 19/50
+32s - loss: 30.7266 - val_loss: 149.1098
+Epoch 00018: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-7.hdf5
+Epoch 20/50
+32s - loss: 31.9189 - val_loss: 178.8678
+Epoch 00019: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-7.hdf5
+Epoch 21/50
+32s - loss: 30.8817 - val_loss: 157.4982
+Epoch 00020: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-7.hdf5
+Epoch 22/50
+32s - loss: 31.1853 - val_loss: 187.8982
+Epoch 00021: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-7.hdf5
+Epoch 23/50
+32s - loss: 29.9720 - val_loss: 159.9910
+Epoch 00022: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-7.hdf5
+Epoch 24/50
+32s - loss: 30.6838 - val_loss: 163.9786
+Epoch 00023: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-7.hdf5
+Epoch 25/50
+32s - loss: 29.3361 - val_loss: 160.1050
+Epoch 00024: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-7.hdf5
+Epoch 26/50
+32s - loss: 29.6839 - val_loss: 178.9271
+Epoch 00025: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-7.hdf5
+Epoch 27/50
+32s - loss: 28.7066 - val_loss: 159.8556
+Epoch 00026: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-7.hdf5
+Epoch 28/50
+32s - loss: 27.8024 - val_loss: 167.8462
+Epoch 00027: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-7.hdf5
+Epoch 29/50
+32s - loss: 28.2583 - val_loss: 193.3616
+Epoch 00028: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-7.hdf5
+Epoch 30/50
+32s - loss: 28.2218 - val_loss: 183.8154
+Epoch 00029: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-7.hdf5
+Epoch 31/50
+32s - loss: 27.6995 - val_loss: 160.8895
+Epoch 00030: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-7.hdf5
+Epoch 32/50
+32s - loss: 27.8176 - val_loss: 153.1549
+Epoch 00031: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-7.hdf5
+Epoch 33/50
+32s - loss: 27.6087 - val_loss: 149.4615
+Epoch 00032: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-7.hdf5
+Epoch 34/50
+32s - loss: 27.8724 - val_loss: 171.6932
+Epoch 00033: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-7.hdf5
+Epoch 35/50
+32s - loss: 27.0892 - val_loss: 157.5963
+Epoch 00034: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-7.hdf5
+Epoch 36/50
+32s - loss: 27.5988 - val_loss: 168.7092
+Epoch 00035: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-7.hdf5
+Epoch 37/50
+32s - loss: 25.7531 - val_loss: 163.5603
+Epoch 00036: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-7.hdf5
+Epoch 38/50
+32s - loss: 26.8189 - val_loss: 163.7525
+Epoch 00037: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-7.hdf5
+Epoch 39/50
+32s - loss: 26.4567 - val_loss: 159.1093
+Epoch 00038: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-7.hdf5
+Epoch 40/50
+32s - loss: 25.8989 - val_loss: 155.3876
+Epoch 00039: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-7.hdf5
+Epoch 41/50
+32s - loss: 25.7086 - val_loss: 143.1376
+Epoch 00040: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-7.hdf5
+Epoch 42/50
+32s - loss: 25.9299 - val_loss: 158.3858
+Epoch 00041: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-7.hdf5
+Epoch 43/50
+32s - loss: 25.3007 - val_loss: 160.9623
+Epoch 00042: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-7.hdf5
+Epoch 44/50
+32s - loss: 25.1191 - val_loss: 159.7902
+Epoch 00043: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-7.hdf5
+Epoch 45/50
+32s - loss: 25.4688 - val_loss: 161.7769
+Epoch 00044: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-7.hdf5
+Epoch 46/50
+32s - loss: 26.2154 - val_loss: 171.2376
+Epoch 00045: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-7.hdf5
+Epoch 47/50
+32s - loss: 25.9434 - val_loss: 170.4268
+Epoch 00046: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-7.hdf5
+Epoch 48/50
+32s - loss: 25.8310 - val_loss: 168.3654
+Epoch 00047: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-7.hdf5
+Epoch 49/50
+32s - loss: 24.5715 - val_loss: 204.2277
+Epoch 00048: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-7.hdf5
+Epoch 50/50
+32s - loss: 24.8283 - val_loss: 189.5005
+Epoch 00049: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-7.hdf5
+train mse = 5.80702, validation mse = 189.501, test mse = 189.501
+train dist = 2.9122, validation dist = 15.0396, test dist = 15.0396
+test size: 540 rest size: 4864
+After sliding window: (441, 100, 40) (441, 2)
+first part size: 3784 second part size: 1080
+After sliding window: (3685, 100, 40) (3685, 2)
+After sliding window: (981, 100, 40) (981, 2)
+test shapes: (441, 100, 40) (441, 2) rest shapes: (4666, 100, 40) (4666, 2)
+Train on 4666 samples, validate on 441 samples
+Epoch 1/50
+32s - loss: 1478.8133 - val_loss: 675.1903
+Epoch 00000: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-8.hdf5
+Epoch 2/50
+32s - loss: 654.0249 - val_loss: 386.1342
+Epoch 00001: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-8.hdf5
+Epoch 3/50
+32s - loss: 264.6253 - val_loss: 265.9401
+Epoch 00002: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-8.hdf5
+Epoch 4/50
+32s - loss: 120.5140 - val_loss: 151.9810
+Epoch 00003: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-8.hdf5
+Epoch 5/50
+32s - loss: 74.8659 - val_loss: 115.2609
+Epoch 00004: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-8.hdf5
+Epoch 6/50
+32s - loss: 58.6062 - val_loss: 130.6372
+Epoch 00005: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-8.hdf5
+Epoch 7/50
+32s - loss: 50.8421 - val_loss: 108.2848
+Epoch 00006: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-8.hdf5
+Epoch 8/50
+32s - loss: 47.7179 - val_loss: 168.0291
+Epoch 00007: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-8.hdf5
+Epoch 9/50
+32s - loss: 43.1797 - val_loss: 139.2418
+Epoch 00008: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-8.hdf5
+Epoch 10/50
+32s - loss: 41.5177 - val_loss: 102.0690
+Epoch 00009: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-8.hdf5
+Epoch 11/50
+32s - loss: 39.2311 - val_loss: 120.4552
+Epoch 00010: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-8.hdf5
+Epoch 12/50
+32s - loss: 38.4223 - val_loss: 105.2718
+Epoch 00011: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-8.hdf5
+Epoch 13/50
+32s - loss: 35.9601 - val_loss: 134.6036
+Epoch 00012: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-8.hdf5
+Epoch 14/50
+32s - loss: 37.6640 - val_loss: 115.9367
+Epoch 00013: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-8.hdf5
+Epoch 15/50
+32s - loss: 35.2077 - val_loss: 129.9383
+Epoch 00014: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-8.hdf5
+Epoch 16/50
+32s - loss: 32.7886 - val_loss: 104.7621
+Epoch 00015: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-8.hdf5
+Epoch 17/50
+32s - loss: 32.9924 - val_loss: 125.0493
+Epoch 00016: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-8.hdf5
+Epoch 18/50
+32s - loss: 32.9839 - val_loss: 118.6268
+Epoch 00017: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-8.hdf5
+Epoch 19/50
+32s - loss: 31.9007 - val_loss: 103.3098
+Epoch 00018: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-8.hdf5
+Epoch 20/50
+32s - loss: 31.2428 - val_loss: 126.3314
+Epoch 00019: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-8.hdf5
+Epoch 21/50
+32s - loss: 30.3122 - val_loss: 106.6185
+Epoch 00020: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-8.hdf5
+Epoch 22/50
+32s - loss: 29.6921 - val_loss: 127.7388
+Epoch 00021: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-8.hdf5
+Epoch 23/50
+32s - loss: 30.2942 - val_loss: 115.8926
+Epoch 00022: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-8.hdf5
+Epoch 24/50
+32s - loss: 30.3590 - val_loss: 104.6366
+Epoch 00023: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-8.hdf5
+Epoch 25/50
+32s - loss: 29.1507 - val_loss: 129.2722
+Epoch 00024: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-8.hdf5
+Epoch 26/50
+32s - loss: 28.8559 - val_loss: 109.8249
+Epoch 00025: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-8.hdf5
+Epoch 27/50
+32s - loss: 29.2541 - val_loss: 139.7701
+Epoch 00026: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-8.hdf5
+Epoch 28/50
+32s - loss: 27.8429 - val_loss: 104.1054
+Epoch 00027: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-8.hdf5
+Epoch 29/50
+32s - loss: 27.8648 - val_loss: 110.6928
+Epoch 00028: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-8.hdf5
+Epoch 30/50
+32s - loss: 27.7477 - val_loss: 113.8823
+Epoch 00029: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-8.hdf5
+Epoch 31/50
+32s - loss: 26.7302 - val_loss: 121.7392
+Epoch 00030: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-8.hdf5
+Epoch 32/50
+32s - loss: 26.7629 - val_loss: 124.4874
+Epoch 00031: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-8.hdf5
+Epoch 33/50
+32s - loss: 27.1322 - val_loss: 106.3105
+Epoch 00032: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-8.hdf5
+Epoch 34/50
+32s - loss: 27.6247 - val_loss: 110.9810
+Epoch 00033: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-8.hdf5
+Epoch 35/50
+32s - loss: 26.5169 - val_loss: 126.5605
+Epoch 00034: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-8.hdf5
+Epoch 36/50
+32s - loss: 26.6619 - val_loss: 107.3253
+Epoch 00035: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-8.hdf5
+Epoch 37/50
+32s - loss: 27.0582 - val_loss: 98.4091
+Epoch 00036: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-8.hdf5
+Epoch 38/50
+32s - loss: 27.1100 - val_loss: 120.8909
+Epoch 00037: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-8.hdf5
+Epoch 39/50
+32s - loss: 26.1882 - val_loss: 100.1881
+Epoch 00038: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-8.hdf5
+Epoch 40/50
+32s - loss: 26.1043 - val_loss: 118.8525
+Epoch 00039: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-8.hdf5
+Epoch 41/50
+32s - loss: 26.7641 - val_loss: 126.2758
+Epoch 00040: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-8.hdf5
+Epoch 42/50
+32s - loss: 25.4438 - val_loss: 115.2054
+Epoch 00041: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-8.hdf5
+Epoch 43/50
+32s - loss: 25.8612 - val_loss: 109.8226
+Epoch 00042: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-8.hdf5
+Epoch 44/50
+32s - loss: 25.4692 - val_loss: 109.7084
+Epoch 00043: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-8.hdf5
+Epoch 45/50
+32s - loss: 25.5611 - val_loss: 114.7362
+Epoch 00044: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-8.hdf5
+Epoch 46/50
+32s - loss: 25.2516 - val_loss: 109.9225
+Epoch 00045: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-8.hdf5
+Epoch 47/50
+32s - loss: 25.0246 - val_loss: 140.5572
+Epoch 00046: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-8.hdf5
+Epoch 48/50
+32s - loss: 24.6989 - val_loss: 115.6853
+Epoch 00047: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-8.hdf5
+Epoch 49/50
+32s - loss: 25.3141 - val_loss: 101.4859
+Epoch 00048: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-8.hdf5
+Epoch 50/50
+32s - loss: 24.7688 - val_loss: 100.9689
+Epoch 00049: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-8.hdf5
+train mse = 6.10286, validation mse = 100.969, test mse = 100.969
+train dist = 3.04186, validation dist = 11.8979, test dist = 11.8979
+test size: 540 rest size: 4864
+After sliding window: (441, 100, 40) (441, 2)
+first part size: 4324 second part size: 540
+After sliding window: (4225, 100, 40) (4225, 2)
+After sliding window: (441, 100, 40) (441, 2)
+test shapes: (441, 100, 40) (441, 2) rest shapes: (4666, 100, 40) (4666, 2)
+Train on 4666 samples, validate on 441 samples
+Epoch 1/50
+32s - loss: 1417.3568 - val_loss: 1064.7716
+Epoch 00000: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-9.hdf5
+Epoch 2/50
+32s - loss: 626.9274 - val_loss: 493.4715
+Epoch 00001: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-9.hdf5
+Epoch 3/50
+32s - loss: 268.1619 - val_loss: 373.8518
+Epoch 00002: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-9.hdf5
+Epoch 4/50
+32s - loss: 124.0875 - val_loss: 512.5774
+Epoch 00003: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-9.hdf5
+Epoch 5/50
+32s - loss: 75.3200 - val_loss: 439.9918
+Epoch 00004: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-9.hdf5
+Epoch 6/50
+32s - loss: 61.5333 - val_loss: 250.9036
+Epoch 00005: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-9.hdf5
+Epoch 7/50
+32s - loss: 55.3648 - val_loss: 409.9586
+Epoch 00006: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-9.hdf5
+Epoch 8/50
+32s - loss: 49.4032 - val_loss: 370.0200
+Epoch 00007: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-9.hdf5
+Epoch 9/50
+32s - loss: 44.6839 - val_loss: 396.5339
+Epoch 00008: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-9.hdf5
+Epoch 10/50
+32s - loss: 42.0616 - val_loss: 489.2490
+Epoch 00009: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-9.hdf5
+Epoch 11/50
+32s - loss: 40.1930 - val_loss: 339.0935
+Epoch 00010: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-9.hdf5
+Epoch 12/50
+32s - loss: 38.0229 - val_loss: 330.8943
+Epoch 00011: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-9.hdf5
+Epoch 13/50
+32s - loss: 37.2435 - val_loss: 353.9249
+Epoch 00012: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-9.hdf5
+Epoch 14/50
+32s - loss: 37.0705 - val_loss: 450.0001
+Epoch 00013: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-9.hdf5
+Epoch 15/50
+32s - loss: 35.3010 - val_loss: 412.5193
+Epoch 00014: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-9.hdf5
+Epoch 16/50
+32s - loss: 35.0997 - val_loss: 404.2163
+Epoch 00015: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-9.hdf5
+Epoch 17/50
+32s - loss: 33.7222 - val_loss: 294.7994
+Epoch 00016: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-9.hdf5
+Epoch 18/50
+32s - loss: 32.9186 - val_loss: 385.5969
+Epoch 00017: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-9.hdf5
+Epoch 19/50
+32s - loss: 32.3036 - val_loss: 348.0417
+Epoch 00018: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-9.hdf5
+Epoch 20/50
+32s - loss: 31.2525 - val_loss: 354.4833
+Epoch 00019: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-9.hdf5
+Epoch 21/50
+32s - loss: 30.6352 - val_loss: 388.5079
+Epoch 00020: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-9.hdf5
+Epoch 22/50
+32s - loss: 29.9730 - val_loss: 335.8921
+Epoch 00021: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-9.hdf5
+Epoch 23/50
+32s - loss: 29.8645 - val_loss: 404.9323
+Epoch 00022: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-9.hdf5
+Epoch 24/50
+32s - loss: 28.7227 - val_loss: 354.9962
+Epoch 00023: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-9.hdf5
+Epoch 25/50
+32s - loss: 29.0245 - val_loss: 420.6261
+Epoch 00024: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-9.hdf5
+Epoch 26/50
+32s - loss: 30.2088 - val_loss: 430.6595
+Epoch 00025: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-9.hdf5
+Epoch 27/50
+32s - loss: 27.5944 - val_loss: 378.2083
+Epoch 00026: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-9.hdf5
+Epoch 28/50
+32s - loss: 28.2172 - val_loss: 468.0401
+Epoch 00027: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-9.hdf5
+Epoch 29/50
+32s - loss: 27.9282 - val_loss: 390.5068
+Epoch 00028: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-9.hdf5
+Epoch 30/50
+32s - loss: 27.8987 - val_loss: 361.2646
+Epoch 00029: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-9.hdf5
+Epoch 31/50
+32s - loss: 27.7094 - val_loss: 377.8315
+Epoch 00030: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-9.hdf5
+Epoch 32/50
+32s - loss: 27.0165 - val_loss: 332.1642
+Epoch 00031: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-9.hdf5
+Epoch 33/50
+32s - loss: 27.6506 - val_loss: 454.1869
+Epoch 00032: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-9.hdf5
+Epoch 34/50
+32s - loss: 26.6487 - val_loss: 376.0695
+Epoch 00033: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-9.hdf5
+Epoch 35/50
+32s - loss: 26.1910 - val_loss: 378.7229
+Epoch 00034: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-9.hdf5
+Epoch 36/50
+32s - loss: 26.5826 - val_loss: 374.7307
+Epoch 00035: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-9.hdf5
+Epoch 37/50
+32s - loss: 26.1216 - val_loss: 412.9123
+Epoch 00036: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-9.hdf5
+Epoch 38/50
+32s - loss: 25.6725 - val_loss: 420.7653
+Epoch 00037: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-9.hdf5
+Epoch 39/50
+32s - loss: 25.4038 - val_loss: 368.3763
+Epoch 00038: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-9.hdf5
+Epoch 40/50
+32s - loss: 25.5845 - val_loss: 426.8217
+Epoch 00039: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-9.hdf5
+Epoch 41/50
+32s - loss: 24.5502 - val_loss: 423.9706
+Epoch 00040: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-9.hdf5
+Epoch 42/50
+32s - loss: 25.8089 - val_loss: 426.4591
+Epoch 00041: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-9.hdf5
+Epoch 43/50
+32s - loss: 24.9915 - val_loss: 349.9590
+Epoch 00042: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-9.hdf5
+Epoch 44/50
+32s - loss: 24.3334 - val_loss: 349.2150
+Epoch 00043: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-9.hdf5
+Epoch 45/50
+32s - loss: 24.8463 - val_loss: 387.9826
+Epoch 00044: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-9.hdf5
+Epoch 46/50
+32s - loss: 24.3429 - val_loss: 421.1417
+Epoch 00045: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-9.hdf5
+Epoch 47/50
+32s - loss: 24.8327 - val_loss: 373.9360
+Epoch 00046: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-9.hdf5
+Epoch 48/50
+32s - loss: 25.1180 - val_loss: 396.4663
+Epoch 00047: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-9.hdf5
+Epoch 49/50
+32s - loss: 24.7598 - val_loss: 324.0755
+Epoch 00048: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-9.hdf5
+Epoch 50/50
+32s - loss: 24.1142 - val_loss: 394.8819
+Epoch 00049: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-9.hdf5
+train mse = 5.41443, validation mse = 394.882, test mse = 394.882
+train dist = 2.78975, validation dist = 21.224, test dist = 21.224
+test size: 540 rest size: 4864
+After sliding window: (441, 100, 40) (441, 2)
+first part size: 4864 second part size: 0
+After sliding window: (4765, 100, 40) (4765, 2)
+test shapes: (441, 100, 40) (441, 2) rest shapes: (4765, 100, 40) (4765, 2)
+Train on 4765 samples, validate on 441 samples
+Epoch 1/50
+33s - loss: 1424.0344 - val_loss: 679.6025
+Epoch 00000: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-10.hdf5
+Epoch 2/50
+33s - loss: 571.9861 - val_loss: 326.8240
+Epoch 00001: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-10.hdf5
+Epoch 3/50
+33s - loss: 222.5833 - val_loss: 289.0701
+Epoch 00002: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-10.hdf5
+Epoch 4/50
+33s - loss: 106.1391 - val_loss: 245.8012
+Epoch 00003: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-10.hdf5
+Epoch 5/50
+33s - loss: 66.8264 - val_loss: 249.3537
+Epoch 00004: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-10.hdf5
+Epoch 6/50
+33s - loss: 55.2898 - val_loss: 253.7056
+Epoch 00005: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-10.hdf5
+Epoch 7/50
+33s - loss: 50.2210 - val_loss: 250.1364
+Epoch 00006: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-10.hdf5
+Epoch 8/50
+33s - loss: 46.1976 - val_loss: 216.6111
+Epoch 00007: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-10.hdf5
+Epoch 9/50
+33s - loss: 43.1168 - val_loss: 237.2158
+Epoch 00008: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-10.hdf5
+Epoch 10/50
+33s - loss: 39.9694 - val_loss: 235.5122
+Epoch 00009: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-10.hdf5
+Epoch 11/50
+33s - loss: 39.0511 - val_loss: 251.1567
+Epoch 00010: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-10.hdf5
+Epoch 12/50
+33s - loss: 36.3636 - val_loss: 260.3209
+Epoch 00011: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-10.hdf5
+Epoch 13/50
+33s - loss: 36.2226 - val_loss: 233.0018
+Epoch 00012: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-10.hdf5
+Epoch 14/50
+33s - loss: 35.4684 - val_loss: 300.9881
+Epoch 00013: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-10.hdf5
+Epoch 15/50
+33s - loss: 34.6199 - val_loss: 273.7336
+Epoch 00014: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-10.hdf5
+Epoch 16/50
+33s - loss: 33.2945 - val_loss: 299.6999
+Epoch 00015: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-10.hdf5
+Epoch 17/50
+33s - loss: 32.4527 - val_loss: 267.7030
+Epoch 00016: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-10.hdf5
+Epoch 18/50
+33s - loss: 32.3702 - val_loss: 265.2844
+Epoch 00017: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-10.hdf5
+Epoch 19/50
+33s - loss: 31.2516 - val_loss: 252.4255
+Epoch 00018: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-10.hdf5
+Epoch 20/50
+33s - loss: 30.7113 - val_loss: 218.7178
+Epoch 00019: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-10.hdf5
+Epoch 21/50
+33s - loss: 30.6034 - val_loss: 267.9334
+Epoch 00020: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-10.hdf5
+Epoch 22/50
+33s - loss: 30.2146 - val_loss: 284.4623
+Epoch 00021: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-10.hdf5
+Epoch 23/50
+33s - loss: 28.8179 - val_loss: 260.2875
+Epoch 00022: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-10.hdf5
+Epoch 24/50
+33s - loss: 28.9370 - val_loss: 255.5289
+Epoch 00023: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-10.hdf5
+Epoch 25/50
+33s - loss: 28.9101 - val_loss: 260.5299
+Epoch 00024: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-10.hdf5
+Epoch 26/50
+33s - loss: 27.9317 - val_loss: 219.9328
+Epoch 00025: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-10.hdf5
+Epoch 27/50
+33s - loss: 27.1591 - val_loss: 247.1892
+Epoch 00026: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-10.hdf5
+Epoch 28/50
+33s - loss: 27.8577 - val_loss: 230.8727
+Epoch 00027: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-10.hdf5
+Epoch 29/50
+33s - loss: 26.6620 - val_loss: 211.7907
+Epoch 00028: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-10.hdf5
+Epoch 30/50
+33s - loss: 27.2282 - val_loss: 244.8793
+Epoch 00029: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-10.hdf5
+Epoch 31/50
+33s - loss: 27.2912 - val_loss: 238.1032
+Epoch 00030: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-10.hdf5
+Epoch 32/50
+33s - loss: 27.3174 - val_loss: 242.2480
+Epoch 00031: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-10.hdf5
+Epoch 33/50
+33s - loss: 26.9001 - val_loss: 240.2073
+Epoch 00032: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-10.hdf5
+Epoch 34/50
+33s - loss: 26.8637 - val_loss: 208.9629
+Epoch 00033: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-10.hdf5
+Epoch 35/50
+33s - loss: 26.6643 - val_loss: 190.2649
+Epoch 00034: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-10.hdf5
+Epoch 36/50
+33s - loss: 26.0890 - val_loss: 232.8933
+Epoch 00035: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-10.hdf5
+Epoch 37/50
+33s - loss: 25.7127 - val_loss: 219.3268
+Epoch 00036: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-10.hdf5
+Epoch 38/50
+33s - loss: 25.4476 - val_loss: 219.0798
+Epoch 00037: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-10.hdf5
+Epoch 39/50
+33s - loss: 25.9520 - val_loss: 191.7197
+Epoch 00038: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-10.hdf5
+Epoch 40/50
+33s - loss: 25.0252 - val_loss: 215.4563
+Epoch 00039: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-10.hdf5
+Epoch 41/50
+33s - loss: 25.2573 - val_loss: 234.0425
+Epoch 00040: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-10.hdf5
+Epoch 42/50
+33s - loss: 25.3191 - val_loss: 225.4072
+Epoch 00041: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-10.hdf5
+Epoch 43/50
+33s - loss: 25.1790 - val_loss: 214.7200
+Epoch 00042: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-10.hdf5
+Epoch 44/50
+33s - loss: 25.0599 - val_loss: 270.8497
+Epoch 00043: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-10.hdf5
+Epoch 45/50
+33s - loss: 24.6295 - val_loss: 248.6469
+Epoch 00044: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-10.hdf5
+Epoch 46/50
+33s - loss: 24.2573 - val_loss: 232.9076
+Epoch 00045: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-10.hdf5
+Epoch 47/50
+33s - loss: 25.2839 - val_loss: 224.7463
+Epoch 00046: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-10.hdf5
+Epoch 48/50
+33s - loss: 24.0371 - val_loss: 237.6389
+Epoch 00047: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-10.hdf5
+Epoch 49/50
+33s - loss: 24.0913 - val_loss: 244.2906
+Epoch 00048: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-10.hdf5
+Epoch 50/50
+33s - loss: 23.5485 - val_loss: 198.5062
+Epoch 00049: saving model to R2192_models/downsample/downsample40_R2192_1x1400_seq100_ep50_b64_sample2-10.hdf5
+train mse = 8.19391, validation mse = 198.506, test mse = 198.506
+train dist = 3.51948, validation dist = 16.2003, test dist = 16.2003
+mean train dist = 3.02478, mean valid dist = 15.8172, mean test dist = 15.8172

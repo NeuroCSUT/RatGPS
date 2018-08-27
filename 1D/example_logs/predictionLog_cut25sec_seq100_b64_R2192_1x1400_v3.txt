@@ -1,0 +1,58 @@
+Using gpu device 0: GeForce GTX TITAN X (CNMeM is disabled, cuDNN 5005)
+/usr/local/lib/python2.7/dist-packages/theano/tensor/signal/downsample.py:6: UserWarning: downsample module has been moved to the theano.tensor.signal.pool module.
+  "downsample module has been moved to the theano.tensor.signal.pool module.")
+Using Theano backend.
+Original data:  (6964, 72) (6964,) 0.0 62.0 0.92103835599 3.19001369239 0.0 600.0
+position is one-dimensional 1D
+(6964, 1)
+original data dimensions from load_data (6964, 72) (6964, 1)
+cutting first seconds to remove mistaken locations (6964, 72) (6964, 1)
+After cutting first seconds to remove mistaken locations (6839, 72) (6839, 1)
+Creating model...
+--------------------------------------------------------------------------------
+Initial input shape: (64, 100, 72)
+--------------------------------------------------------------------------------
+Layer (name)                  Output Shape                  Param #             
+--------------------------------------------------------------------------------
+LSTM (Unnamed)                (64, 100, 512)                1198080             
+Dropout (Unnamed)             (64, 100, 512)                0                   
+LSTM (Unnamed)                (64, 512)                     2099200             
+Dropout (Unnamed)             (64, 512)                     0                   
+Dense (Unnamed)               (64, 1)                       513                 
+--------------------------------------------------------------------------------
+Total params: 3297793
+--------------------------------------------------------------------------------
+Compiling model...
+test shape: (684, 72) (684, 1)
+After sliding window: (585, 100, 72) (585, 1)
+pred_y: (585, 1)
+test shape: (684, 72) (684, 1)
+After sliding window: (585, 100, 72) (585, 1)
+pred_y: (585, 1)
+test shape: (684, 72) (684, 1)
+After sliding window: (585, 100, 72) (585, 1)
+pred_y: (585, 1)
+test shape: (684, 72) (684, 1)
+After sliding window: (585, 100, 72) (585, 1)
+pred_y: (585, 1)
+test shape: (684, 72) (684, 1)
+After sliding window: (585, 100, 72) (585, 1)
+pred_y: (585, 1)
+test shape: (684, 72) (684, 1)
+After sliding window: (585, 100, 72) (585, 1)
+pred_y: (585, 1)
+test shape: (684, 72) (684, 1)
+After sliding window: (585, 100, 72) (585, 1)
+pred_y: (585, 1)
+test shape: (684, 72) (684, 1)
+After sliding window: (585, 100, 72) (585, 1)
+pred_y: (585, 1)
+test shape: (684, 72) (684, 1)
+After sliding window: (585, 100, 72) (585, 1)
+pred_y: (585, 1)
+test shape: (683, 72) (683, 1)
+After sliding window: (584, 100, 72) (584, 1)
+pred_y: (584, 1)
+preds shape: (5849, 1) targets shape: (5849, 1)
+in mse (5849, 1) (5849, 1) 1
+mse = 2582.27, me	an dist = 19.7306, median dist = 7.21016

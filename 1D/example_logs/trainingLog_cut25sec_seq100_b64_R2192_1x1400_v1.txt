@@ -1,0 +1,1645 @@
+Using gpu device 0: GeForce GTX TITAN X (CNMeM is disabled, cuDNN 5005)
+/usr/local/lib/python2.7/dist-packages/theano/tensor/signal/downsample.py:6: UserWarning: downsample module has been moved to the theano.tensor.signal.pool module.
+  "downsample module has been moved to the theano.tensor.signal.pool module.")
+Using Theano backend.
+Original data:  (6964, 72) (6964,) 0.0 62.0 0.92103835599 3.19001369239 0.0 600.0
+position is one-dimensional 1D
+(6964, 1)
+original data dimensions from load_data (6964, 72) (6964, 1)
+cutting first seconds to remove mistaken locations (6964, 72) (6964, 1)
+After cutting first seconds to remove mistaken locations (6839, 72) (6839, 1)
+Creating model...
+--------------------------------------------------------------------------------
+Initial input shape: (64, 100, 72)
+--------------------------------------------------------------------------------
+Layer (name)                  Output Shape                  Param #             
+--------------------------------------------------------------------------------
+LSTM (Unnamed)                (64, 100, 512)                1198080             
+Dropout (Unnamed)             (64, 100, 512)                0                   
+LSTM (Unnamed)                (64, 512)                     2099200             
+Dropout (Unnamed)             (64, 512)                     0                   
+Dense (Unnamed)               (64, 1)                       513                 
+--------------------------------------------------------------------------------
+Total params: 3297793
+--------------------------------------------------------------------------------
+Compiling model...
+After sliding window: (585, 100, 72) (585, 1)
+first and second part lengths are... 0 6155
+After sliding window: (6056, 100, 72) (6056, 1)
+SLIDING WINDOW : shapes of test and rest: (585, 100, 72) (6056, 100, 72)
+test: (585, 100, 72) (585, 1) rest: (6056, 100, 72) (6056, 1)
+Train on 6056 samples, validate on 585 samples
+Epoch 1/50
+31s - loss: 87470.7590 - val_loss: 53524.9278
+Epoch 00000: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-1.hdf5
+Epoch 2/50
+31s - loss: 67703.7932 - val_loss: 42328.7711
+Epoch 00001: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-1.hdf5
+Epoch 3/50
+31s - loss: 55056.2324 - val_loss: 36278.8960
+Epoch 00002: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-1.hdf5
+Epoch 4/50
+31s - loss: 46408.0765 - val_loss: 32841.4775
+Epoch 00003: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-1.hdf5
+Epoch 5/50
+31s - loss: 38142.7675 - val_loss: 23110.9855
+Epoch 00004: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-1.hdf5
+Epoch 6/50
+30s - loss: 25610.0297 - val_loss: 16571.4300
+Epoch 00005: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-1.hdf5
+Epoch 7/50
+31s - loss: 17782.4026 - val_loss: 11636.0884
+Epoch 00006: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-1.hdf5
+Epoch 8/50
+31s - loss: 11985.7642 - val_loss: 15305.7728
+Epoch 00007: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-1.hdf5
+Epoch 9/50
+31s - loss: 7789.5663 - val_loss: 7706.1272
+Epoch 00008: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-1.hdf5
+Epoch 10/50
+31s - loss: 4765.2730 - val_loss: 12601.6738
+Epoch 00009: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-1.hdf5
+Epoch 11/50
+31s - loss: 3465.9023 - val_loss: 30004.0814
+Epoch 00010: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-1.hdf5
+Epoch 12/50
+31s - loss: 2592.7060 - val_loss: 21366.6890
+Epoch 00011: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-1.hdf5
+Epoch 13/50
+31s - loss: 1532.0051 - val_loss: 8967.4782
+Epoch 00012: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-1.hdf5
+Epoch 14/50
+30s - loss: 938.0716 - val_loss: 9530.7545
+Epoch 00013: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-1.hdf5
+Epoch 15/50
+30s - loss: 643.7958 - val_loss: 6092.7743
+Epoch 00014: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-1.hdf5
+Epoch 16/50
+30s - loss: 539.7118 - val_loss: 9136.7093
+Epoch 00015: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-1.hdf5
+Epoch 17/50
+30s - loss: 570.5248 - val_loss: 17719.5597
+Epoch 00016: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-1.hdf5
+Epoch 18/50
+30s - loss: 502.5512 - val_loss: 4721.9119
+Epoch 00017: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-1.hdf5
+Epoch 19/50
+30s - loss: 507.7568 - val_loss: 5134.9929
+Epoch 00018: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-1.hdf5
+Epoch 20/50
+30s - loss: 490.5505 - val_loss: 13273.0819
+Epoch 00019: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-1.hdf5
+Epoch 21/50
+30s - loss: 506.4193 - val_loss: 13704.6299
+Epoch 00020: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-1.hdf5
+Epoch 22/50
+30s - loss: 474.1787 - val_loss: 12476.0464
+Epoch 00021: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-1.hdf5
+Epoch 23/50
+31s - loss: 492.7696 - val_loss: 786.7820
+Epoch 00022: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-1.hdf5
+Epoch 24/50
+30s - loss: 504.6237 - val_loss: 10384.1527
+Epoch 00023: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-1.hdf5
+Epoch 25/50
+30s - loss: 517.9270 - val_loss: 8722.1773
+Epoch 00024: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-1.hdf5
+Epoch 26/50
+30s - loss: 471.4590 - val_loss: 2575.4250
+Epoch 00025: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-1.hdf5
+Epoch 27/50
+30s - loss: 489.8660 - val_loss: 7531.1787
+Epoch 00026: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-1.hdf5
+Epoch 28/50
+30s - loss: 463.4559 - val_loss: 8879.1103
+Epoch 00027: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-1.hdf5
+Epoch 29/50
+30s - loss: 455.4618 - val_loss: 12069.4392
+Epoch 00028: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-1.hdf5
+Epoch 30/50
+30s - loss: 451.1747 - val_loss: 11012.0644
+Epoch 00029: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-1.hdf5
+Epoch 31/50
+30s - loss: 471.0761 - val_loss: 2338.7024
+Epoch 00030: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-1.hdf5
+Epoch 32/50
+30s - loss: 455.9664 - val_loss: 4735.1621
+Epoch 00031: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-1.hdf5
+Epoch 33/50
+30s - loss: 499.8264 - val_loss: 2551.0176
+Epoch 00032: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-1.hdf5
+Epoch 34/50
+30s - loss: 484.5836 - val_loss: 5647.8774
+Epoch 00033: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-1.hdf5
+Epoch 35/50
+30s - loss: 456.3955 - val_loss: 606.8605
+Epoch 00034: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-1.hdf5
+Epoch 36/50
+30s - loss: 453.1157 - val_loss: 506.3034
+Epoch 00035: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-1.hdf5
+Epoch 37/50
+30s - loss: 472.0626 - val_loss: 1299.0947
+Epoch 00036: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-1.hdf5
+Epoch 38/50
+30s - loss: 459.8148 - val_loss: 1404.6560
+Epoch 00037: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-1.hdf5
+Epoch 39/50
+30s - loss: 448.2741 - val_loss: 2268.2331
+Epoch 00038: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-1.hdf5
+Epoch 40/50
+30s - loss: 425.8933 - val_loss: 2246.8043
+Epoch 00039: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-1.hdf5
+Epoch 41/50
+30s - loss: 429.5983 - val_loss: 1055.4929
+Epoch 00040: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-1.hdf5
+Epoch 42/50
+30s - loss: 429.5024 - val_loss: 2811.1588
+Epoch 00041: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-1.hdf5
+Epoch 43/50
+30s - loss: 438.3188 - val_loss: 451.5429
+Epoch 00042: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-1.hdf5
+Epoch 44/50
+30s - loss: 446.7873 - val_loss: 1569.2433
+Epoch 00043: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-1.hdf5
+Epoch 45/50
+30s - loss: 445.1229 - val_loss: 2587.4030
+Epoch 00044: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-1.hdf5
+Epoch 46/50
+30s - loss: 436.0632 - val_loss: 416.9534
+Epoch 00045: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-1.hdf5
+Epoch 47/50
+30s - loss: 424.0409 - val_loss: 1149.5981
+Epoch 00046: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-1.hdf5
+Epoch 48/50
+30s - loss: 431.5151 - val_loss: 5748.5683
+Epoch 00047: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-1.hdf5
+Epoch 49/50
+30s - loss: 430.5615 - val_loss: 519.7457
+Epoch 00048: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-1.hdf5
+Epoch 50/50
+30s - loss: 439.8898 - val_loss: 465.1750
+Epoch 00049: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-1.hdf5
+in mse (6056, 1) (6056, 1) 1
+in mse (585, 1) (585, 1) 1
+in mse (585, 1) (585, 1) 1
+train mse = 41.2649, validation mse = 465.175, test mse = 465.175
+train dist = 4.74307, validation dist = 15.1276, test dist = 15.1276
+After sliding window: (585, 100, 72) (585, 1)
+first and second part lengths are... 684 5471
+After sliding window: (585, 100, 72) (585, 1)
+After sliding window: (5372, 100, 72) (5372, 1)
+SLIDING WINDOW : shapes of test and rest: (585, 100, 72) (5957, 100, 72)
+test: (585, 100, 72) (585, 1) rest: (5957, 100, 72) (5957, 1)
+Train on 5957 samples, validate on 585 samples
+Epoch 1/50
+30s - loss: 83496.5788 - val_loss: 80958.7838
+Epoch 00000: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-2.hdf5
+Epoch 2/50
+30s - loss: 65122.5127 - val_loss: 63759.2369
+Epoch 00001: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-2.hdf5
+Epoch 3/50
+30s - loss: 51381.6565 - val_loss: 50546.2544
+Epoch 00002: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-2.hdf5
+Epoch 4/50
+30s - loss: 45856.8552 - val_loss: 46293.6225
+Epoch 00003: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-2.hdf5
+Epoch 5/50
+30s - loss: 39087.2674 - val_loss: 36134.9772
+Epoch 00004: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-2.hdf5
+Epoch 6/50
+30s - loss: 27197.5982 - val_loss: 26432.5309
+Epoch 00005: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-2.hdf5
+Epoch 7/50
+30s - loss: 19255.6279 - val_loss: 17750.9375
+Epoch 00006: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-2.hdf5
+Epoch 8/50
+30s - loss: 12982.2031 - val_loss: 12017.3776
+Epoch 00007: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-2.hdf5
+Epoch 9/50
+30s - loss: 9103.6936 - val_loss: 8215.1056
+Epoch 00008: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-2.hdf5
+Epoch 10/50
+30s - loss: 5816.5841 - val_loss: 5455.8622
+Epoch 00009: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-2.hdf5
+Epoch 11/50
+30s - loss: 3977.5113 - val_loss: 3948.9832
+Epoch 00010: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-2.hdf5
+Epoch 12/50
+30s - loss: 2922.8689 - val_loss: 3090.5010
+Epoch 00011: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-2.hdf5
+Epoch 13/50
+30s - loss: 2029.3790 - val_loss: 1815.1229
+Epoch 00012: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-2.hdf5
+Epoch 14/50
+30s - loss: 1259.0044 - val_loss: 890.8073
+Epoch 00013: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-2.hdf5
+Epoch 15/50
+30s - loss: 788.6555 - val_loss: 653.1111
+Epoch 00014: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-2.hdf5
+Epoch 16/50
+30s - loss: 632.9161 - val_loss: 295.3246
+Epoch 00015: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-2.hdf5
+Epoch 17/50
+30s - loss: 511.9460 - val_loss: 270.4708
+Epoch 00016: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-2.hdf5
+Epoch 18/50
+30s - loss: 483.7300 - val_loss: 208.4994
+Epoch 00017: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-2.hdf5
+Epoch 19/50
+30s - loss: 468.9237 - val_loss: 577.4426
+Epoch 00018: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-2.hdf5
+Epoch 20/50
+30s - loss: 478.4521 - val_loss: 329.6119
+Epoch 00019: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-2.hdf5
+Epoch 21/50
+30s - loss: 464.8185 - val_loss: 425.1370
+Epoch 00020: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-2.hdf5
+Epoch 22/50
+30s - loss: 475.7686 - val_loss: 427.8132
+Epoch 00021: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-2.hdf5
+Epoch 23/50
+30s - loss: 469.7400 - val_loss: 179.2734
+Epoch 00022: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-2.hdf5
+Epoch 24/50
+30s - loss: 447.5128 - val_loss: 349.8688
+Epoch 00023: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-2.hdf5
+Epoch 25/50
+30s - loss: 452.5174 - val_loss: 203.1762
+Epoch 00024: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-2.hdf5
+Epoch 26/50
+30s - loss: 462.9751 - val_loss: 330.8101
+Epoch 00025: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-2.hdf5
+Epoch 27/50
+30s - loss: 484.0756 - val_loss: 223.3216
+Epoch 00026: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-2.hdf5
+Epoch 28/50
+30s - loss: 469.9390 - val_loss: 374.7719
+Epoch 00027: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-2.hdf5
+Epoch 29/50
+30s - loss: 455.7718 - val_loss: 674.9857
+Epoch 00028: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-2.hdf5
+Epoch 30/50
+30s - loss: 468.4211 - val_loss: 605.4854
+Epoch 00029: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-2.hdf5
+Epoch 31/50
+30s - loss: 480.1612 - val_loss: 241.6858
+Epoch 00030: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-2.hdf5
+Epoch 32/50
+31s - loss: 484.5274 - val_loss: 251.3551
+Epoch 00031: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-2.hdf5
+Epoch 33/50
+30s - loss: 458.5994 - val_loss: 360.8515
+Epoch 00032: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-2.hdf5
+Epoch 34/50
+30s - loss: 439.7352 - val_loss: 174.4067
+Epoch 00033: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-2.hdf5
+Epoch 35/50
+30s - loss: 440.0929 - val_loss: 191.7470
+Epoch 00034: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-2.hdf5
+Epoch 36/50
+30s - loss: 498.7517 - val_loss: 410.4253
+Epoch 00035: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-2.hdf5
+Epoch 37/50
+30s - loss: 470.0192 - val_loss: 167.7745
+Epoch 00036: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-2.hdf5
+Epoch 38/50
+30s - loss: 443.1209 - val_loss: 214.4899
+Epoch 00037: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-2.hdf5
+Epoch 39/50
+30s - loss: 445.4004 - val_loss: 274.2347
+Epoch 00038: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-2.hdf5
+Epoch 40/50
+30s - loss: 435.9398 - val_loss: 324.7524
+Epoch 00039: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-2.hdf5
+Epoch 41/50
+30s - loss: 436.6529 - val_loss: 191.4962
+Epoch 00040: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-2.hdf5
+Epoch 42/50
+30s - loss: 430.8583 - val_loss: 535.2913
+Epoch 00041: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-2.hdf5
+Epoch 43/50
+30s - loss: 432.0462 - val_loss: 269.9650
+Epoch 00042: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-2.hdf5
+Epoch 44/50
+30s - loss: 448.1009 - val_loss: 392.2225
+Epoch 00043: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-2.hdf5
+Epoch 45/50
+30s - loss: 447.2410 - val_loss: 345.5855
+Epoch 00044: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-2.hdf5
+Epoch 46/50
+30s - loss: 429.1346 - val_loss: 638.1581
+Epoch 00045: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-2.hdf5
+Epoch 47/50
+30s - loss: 428.6169 - val_loss: 660.8716
+Epoch 00046: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-2.hdf5
+Epoch 48/50
+30s - loss: 449.4275 - val_loss: 629.0859
+Epoch 00047: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-2.hdf5
+Epoch 49/50
+30s - loss: 424.0167 - val_loss: 548.3560
+Epoch 00048: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-2.hdf5
+Epoch 50/50
+30s - loss: 420.3741 - val_loss: 801.4627
+Epoch 00049: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-2.hdf5
+in mse (5957, 1) (5957, 1) 1
+in mse (585, 1) (585, 1) 1
+in mse (585, 1) (585, 1) 1
+train mse = 43.4451, validation mse = 801.463, test mse = 801.463
+train dist = 4.63468, validation dist = 12.5549, test dist = 12.5549
+After sliding window: (585, 100, 72) (585, 1)
+first and second part lengths are... 1368 4787
+After sliding window: (1269, 100, 72) (1269, 1)
+After sliding window: (4688, 100, 72) (4688, 1)
+SLIDING WINDOW : shapes of test and rest: (585, 100, 72) (5957, 100, 72)
+test: (585, 100, 72) (585, 1) rest: (5957, 100, 72) (5957, 1)
+Train on 5957 samples, validate on 585 samples
+Epoch 1/50
+30s - loss: 81386.4224 - val_loss: 79160.3592
+Epoch 00000: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-3.hdf5
+Epoch 2/50
+30s - loss: 65039.8051 - val_loss: 62048.9007
+Epoch 00001: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-3.hdf5
+Epoch 3/50
+30s - loss: 53262.5643 - val_loss: 52862.0719
+Epoch 00002: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-3.hdf5
+Epoch 4/50
+30s - loss: 44828.8112 - val_loss: 42495.9985
+Epoch 00003: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-3.hdf5
+Epoch 5/50
+30s - loss: 35677.7889 - val_loss: 30826.9184
+Epoch 00004: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-3.hdf5
+Epoch 6/50
+30s - loss: 24694.4945 - val_loss: 21747.0984
+Epoch 00005: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-3.hdf5
+Epoch 7/50
+30s - loss: 17341.2508 - val_loss: 14640.8792
+Epoch 00006: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-3.hdf5
+Epoch 8/50
+30s - loss: 11608.8455 - val_loss: 9761.9088
+Epoch 00007: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-3.hdf5
+Epoch 9/50
+30s - loss: 7662.5875 - val_loss: 5910.5279
+Epoch 00008: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-3.hdf5
+Epoch 10/50
+30s - loss: 5229.9928 - val_loss: 4362.9945
+Epoch 00009: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-3.hdf5
+Epoch 11/50
+30s - loss: 3660.3158 - val_loss: 2996.7802
+Epoch 00010: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-3.hdf5
+Epoch 12/50
+30s - loss: 2766.5241 - val_loss: 2355.9465
+Epoch 00011: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-3.hdf5
+Epoch 13/50
+30s - loss: 1825.7570 - val_loss: 1929.6398
+Epoch 00012: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-3.hdf5
+Epoch 14/50
+30s - loss: 1325.3700 - val_loss: 1652.3526
+Epoch 00013: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-3.hdf5
+Epoch 15/50
+30s - loss: 821.2703 - val_loss: 610.4465
+Epoch 00014: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-3.hdf5
+Epoch 16/50
+30s - loss: 577.5310 - val_loss: 630.9630
+Epoch 00015: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-3.hdf5
+Epoch 17/50
+30s - loss: 508.7851 - val_loss: 385.4993
+Epoch 00016: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-3.hdf5
+Epoch 18/50
+30s - loss: 468.8073 - val_loss: 379.2092
+Epoch 00017: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-3.hdf5
+Epoch 19/50
+30s - loss: 490.3593 - val_loss: 272.1694
+Epoch 00018: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-3.hdf5
+Epoch 20/50
+30s - loss: 457.4910 - val_loss: 305.4594
+Epoch 00019: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-3.hdf5
+Epoch 21/50
+30s - loss: 474.3032 - val_loss: 340.6917
+Epoch 00020: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-3.hdf5
+Epoch 22/50
+30s - loss: 453.0370 - val_loss: 333.2552
+Epoch 00021: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-3.hdf5
+Epoch 23/50
+30s - loss: 428.7560 - val_loss: 323.8927
+Epoch 00022: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-3.hdf5
+Epoch 24/50
+30s - loss: 426.9023 - val_loss: 329.7017
+Epoch 00023: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-3.hdf5
+Epoch 25/50
+30s - loss: 437.2929 - val_loss: 253.4718
+Epoch 00024: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-3.hdf5
+Epoch 26/50
+30s - loss: 456.6043 - val_loss: 300.4522
+Epoch 00025: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-3.hdf5
+Epoch 27/50
+30s - loss: 420.0468 - val_loss: 354.0751
+Epoch 00026: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-3.hdf5
+Epoch 28/50
+30s - loss: 422.1968 - val_loss: 415.4091
+Epoch 00027: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-3.hdf5
+Epoch 29/50
+30s - loss: 422.1005 - val_loss: 370.8665
+Epoch 00028: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-3.hdf5
+Epoch 30/50
+30s - loss: 438.9982 - val_loss: 356.1432
+Epoch 00029: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-3.hdf5
+Epoch 31/50
+30s - loss: 411.2512 - val_loss: 283.3867
+Epoch 00030: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-3.hdf5
+Epoch 32/50
+30s - loss: 412.6074 - val_loss: 317.1227
+Epoch 00031: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-3.hdf5
+Epoch 33/50
+30s - loss: 407.4160 - val_loss: 284.7782
+Epoch 00032: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-3.hdf5
+Epoch 34/50
+30s - loss: 429.5904 - val_loss: 373.5636
+Epoch 00033: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-3.hdf5
+Epoch 35/50
+30s - loss: 390.1631 - val_loss: 293.2084
+Epoch 00034: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-3.hdf5
+Epoch 36/50
+30s - loss: 427.7311 - val_loss: 361.9228
+Epoch 00035: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-3.hdf5
+Epoch 37/50
+30s - loss: 409.8197 - val_loss: 268.8633
+Epoch 00036: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-3.hdf5
+Epoch 38/50
+30s - loss: 413.8344 - val_loss: 283.5751
+Epoch 00037: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-3.hdf5
+Epoch 39/50
+30s - loss: 406.2389 - val_loss: 350.7654
+Epoch 00038: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-3.hdf5
+Epoch 40/50
+30s - loss: 404.2273 - val_loss: 264.6196
+Epoch 00039: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-3.hdf5
+Epoch 41/50
+30s - loss: 402.8450 - val_loss: 509.0082
+Epoch 00040: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-3.hdf5
+Epoch 42/50
+30s - loss: 396.6637 - val_loss: 273.0570
+Epoch 00041: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-3.hdf5
+Epoch 43/50
+30s - loss: 406.8723 - val_loss: 299.4645
+Epoch 00042: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-3.hdf5
+Epoch 44/50
+30s - loss: 403.5818 - val_loss: 386.6568
+Epoch 00043: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-3.hdf5
+Epoch 45/50
+30s - loss: 383.5795 - val_loss: 381.1101
+Epoch 00044: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-3.hdf5
+Epoch 46/50
+30s - loss: 388.0071 - val_loss: 461.8933
+Epoch 00045: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-3.hdf5
+Epoch 47/50
+30s - loss: 408.9995 - val_loss: 280.5348
+Epoch 00046: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-3.hdf5
+Epoch 48/50
+30s - loss: 397.3463 - val_loss: 315.2857
+Epoch 00047: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-3.hdf5
+Epoch 49/50
+30s - loss: 379.8054 - val_loss: 365.4690
+Epoch 00048: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-3.hdf5
+Epoch 50/50
+30s - loss: 398.7170 - val_loss: 274.2763
+Epoch 00049: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-3.hdf5
+in mse (5957, 1) (5957, 1) 1
+in mse (585, 1) (585, 1) 1
+in mse (585, 1) (585, 1) 1
+train mse = 109.623, validation mse = 274.276, test mse = 274.276
+train dist = 8.28481, validation dist = 10.9843, test dist = 10.9843
+After sliding window: (585, 100, 72) (585, 1)
+first and second part lengths are... 2052 4103
+After sliding window: (1953, 100, 72) (1953, 1)
+After sliding window: (4004, 100, 72) (4004, 1)
+SLIDING WINDOW : shapes of test and rest: (585, 100, 72) (5957, 100, 72)
+test: (585, 100, 72) (585, 1) rest: (5957, 100, 72) (5957, 1)
+Train on 5957 samples, validate on 585 samples
+Epoch 1/50
+30s - loss: 82568.7313 - val_loss: 81566.8452
+Epoch 00000: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-4.hdf5
+Epoch 2/50
+30s - loss: 64217.6705 - val_loss: 63015.1433
+Epoch 00001: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-4.hdf5
+Epoch 3/50
+30s - loss: 50491.5822 - val_loss: 48847.0045
+Epoch 00002: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-4.hdf5
+Epoch 4/50
+30s - loss: 43233.8818 - val_loss: 39837.9340
+Epoch 00003: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-4.hdf5
+Epoch 5/50
+30s - loss: 32108.4107 - val_loss: 32610.5896
+Epoch 00004: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-4.hdf5
+Epoch 6/50
+30s - loss: 25403.1762 - val_loss: 23555.9836
+Epoch 00005: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-4.hdf5
+Epoch 7/50
+30s - loss: 18676.9430 - val_loss: 16041.1569
+Epoch 00006: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-4.hdf5
+Epoch 8/50
+30s - loss: 12460.5355 - val_loss: 9520.1153
+Epoch 00007: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-4.hdf5
+Epoch 9/50
+30s - loss: 7794.8269 - val_loss: 5753.4318
+Epoch 00008: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-4.hdf5
+Epoch 10/50
+30s - loss: 4980.6417 - val_loss: 4712.0720
+Epoch 00009: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-4.hdf5
+Epoch 11/50
+30s - loss: 3814.5107 - val_loss: 2965.6775
+Epoch 00010: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-4.hdf5
+Epoch 12/50
+30s - loss: 2939.0312 - val_loss: 2390.4146
+Epoch 00011: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-4.hdf5
+Epoch 13/50
+30s - loss: 1966.1342 - val_loss: 1333.5996
+Epoch 00012: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-4.hdf5
+Epoch 14/50
+30s - loss: 1240.7498 - val_loss: 2257.5740
+Epoch 00013: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-4.hdf5
+Epoch 15/50
+30s - loss: 900.9951 - val_loss: 345.4696
+Epoch 00014: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-4.hdf5
+Epoch 16/50
+30s - loss: 578.9932 - val_loss: 431.6670
+Epoch 00015: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-4.hdf5
+Epoch 17/50
+30s - loss: 530.3791 - val_loss: 125.2006
+Epoch 00016: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-4.hdf5
+Epoch 18/50
+30s - loss: 472.4078 - val_loss: 196.0202
+Epoch 00017: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-4.hdf5
+Epoch 19/50
+30s - loss: 489.9711 - val_loss: 608.6354
+Epoch 00018: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-4.hdf5
+Epoch 20/50
+30s - loss: 485.5889 - val_loss: 154.5161
+Epoch 00019: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-4.hdf5
+Epoch 21/50
+30s - loss: 477.6098 - val_loss: 341.9801
+Epoch 00020: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-4.hdf5
+Epoch 22/50
+30s - loss: 478.9889 - val_loss: 121.3214
+Epoch 00021: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-4.hdf5
+Epoch 23/50
+30s - loss: 450.5071 - val_loss: 120.8861
+Epoch 00022: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-4.hdf5
+Epoch 24/50
+30s - loss: 454.2370 - val_loss: 1227.6951
+Epoch 00023: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-4.hdf5
+Epoch 25/50
+30s - loss: 465.9690 - val_loss: 1501.3962
+Epoch 00024: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-4.hdf5
+Epoch 26/50
+30s - loss: 484.7490 - val_loss: 265.7589
+Epoch 00025: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-4.hdf5
+Epoch 27/50
+30s - loss: 442.3881 - val_loss: 301.2881
+Epoch 00026: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-4.hdf5
+Epoch 28/50
+30s - loss: 438.4549 - val_loss: 110.8767
+Epoch 00027: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-4.hdf5
+Epoch 29/50
+30s - loss: 451.3181 - val_loss: 176.7018
+Epoch 00028: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-4.hdf5
+Epoch 30/50
+30s - loss: 435.2658 - val_loss: 146.8068
+Epoch 00029: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-4.hdf5
+Epoch 31/50
+30s - loss: 434.4997 - val_loss: 748.6265
+Epoch 00030: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-4.hdf5
+Epoch 32/50
+30s - loss: 458.5837 - val_loss: 280.8827
+Epoch 00031: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-4.hdf5
+Epoch 33/50
+30s - loss: 445.7972 - val_loss: 223.6852
+Epoch 00032: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-4.hdf5
+Epoch 34/50
+30s - loss: 447.2579 - val_loss: 144.7335
+Epoch 00033: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-4.hdf5
+Epoch 35/50
+30s - loss: 418.0342 - val_loss: 156.7567
+Epoch 00034: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-4.hdf5
+Epoch 36/50
+30s - loss: 436.9889 - val_loss: 225.1863
+Epoch 00035: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-4.hdf5
+Epoch 37/50
+30s - loss: 421.5512 - val_loss: 212.4092
+Epoch 00036: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-4.hdf5
+Epoch 38/50
+30s - loss: 429.6835 - val_loss: 236.7217
+Epoch 00037: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-4.hdf5
+Epoch 39/50
+30s - loss: 427.1443 - val_loss: 528.8517
+Epoch 00038: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-4.hdf5
+Epoch 40/50
+30s - loss: 434.7124 - val_loss: 92.6523
+Epoch 00039: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-4.hdf5
+Epoch 41/50
+30s - loss: 412.8225 - val_loss: 227.4686
+Epoch 00040: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-4.hdf5
+Epoch 42/50
+30s - loss: 427.1547 - val_loss: 244.7171
+Epoch 00041: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-4.hdf5
+Epoch 43/50
+30s - loss: 432.7376 - val_loss: 155.6955
+Epoch 00042: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-4.hdf5
+Epoch 44/50
+30s - loss: 416.9906 - val_loss: 257.0836
+Epoch 00043: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-4.hdf5
+Epoch 45/50
+30s - loss: 409.2173 - val_loss: 153.4684
+Epoch 00044: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-4.hdf5
+Epoch 46/50
+30s - loss: 414.4743 - val_loss: 156.2868
+Epoch 00045: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-4.hdf5
+Epoch 47/50
+30s - loss: 406.7188 - val_loss: 116.7786
+Epoch 00046: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-4.hdf5
+Epoch 48/50
+30s - loss: 403.0286 - val_loss: 219.6962
+Epoch 00047: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-4.hdf5
+Epoch 49/50
+30s - loss: 414.5105 - val_loss: 165.6854
+Epoch 00048: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-4.hdf5
+Epoch 50/50
+30s - loss: 406.5064 - val_loss: 196.3329
+Epoch 00049: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-4.hdf5
+in mse (5957, 1) (5957, 1) 1
+in mse (585, 1) (585, 1) 1
+in mse (585, 1) (585, 1) 1
+train mse = 50.5149, validation mse = 196.333, test mse = 196.333
+train dist = 5.43696, validation dist = 9.1247, test dist = 9.1247
+After sliding window: (585, 100, 72) (585, 1)
+first and second part lengths are... 2736 3419
+After sliding window: (2637, 100, 72) (2637, 1)
+After sliding window: (3320, 100, 72) (3320, 1)
+SLIDING WINDOW : shapes of test and rest: (585, 100, 72) (5957, 100, 72)
+test: (585, 100, 72) (585, 1) rest: (5957, 100, 72) (5957, 1)
+Train on 5957 samples, validate on 585 samples
+Epoch 1/50
+30s - loss: 87147.5433 - val_loss: 59038.5613
+Epoch 00000: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-5.hdf5
+Epoch 2/50
+30s - loss: 67876.7408 - val_loss: 46783.9453
+Epoch 00001: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-5.hdf5
+Epoch 3/50
+30s - loss: 53299.2918 - val_loss: 38568.7913
+Epoch 00002: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-5.hdf5
+Epoch 4/50
+30s - loss: 46363.0709 - val_loss: 37341.0965
+Epoch 00003: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-5.hdf5
+Epoch 5/50
+30s - loss: 41757.4930 - val_loss: 28557.3883
+Epoch 00004: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-5.hdf5
+Epoch 6/50
+30s - loss: 28908.4976 - val_loss: 22607.2654
+Epoch 00005: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-5.hdf5
+Epoch 7/50
+30s - loss: 20536.8620 - val_loss: 14662.5810
+Epoch 00006: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-5.hdf5
+Epoch 8/50
+30s - loss: 14429.8926 - val_loss: 10676.5018
+Epoch 00007: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-5.hdf5
+Epoch 9/50
+30s - loss: 9723.9996 - val_loss: 6704.9754
+Epoch 00008: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-5.hdf5
+Epoch 10/50
+30s - loss: 5898.6533 - val_loss: 4341.7887
+Epoch 00009: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-5.hdf5
+Epoch 11/50
+30s - loss: 4059.7503 - val_loss: 3322.1681
+Epoch 00010: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-5.hdf5
+Epoch 12/50
+30s - loss: 3174.0211 - val_loss: 2473.5436
+Epoch 00011: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-5.hdf5
+Epoch 13/50
+30s - loss: 2129.9214 - val_loss: 1441.8698
+Epoch 00012: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-5.hdf5
+Epoch 14/50
+30s - loss: 1335.6548 - val_loss: 749.0261
+Epoch 00013: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-5.hdf5
+Epoch 15/50
+30s - loss: 837.2006 - val_loss: 1070.8446
+Epoch 00014: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-5.hdf5
+Epoch 16/50
+30s - loss: 651.6524 - val_loss: 287.1469
+Epoch 00015: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-5.hdf5
+Epoch 17/50
+30s - loss: 542.2398 - val_loss: 1123.0609
+Epoch 00016: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-5.hdf5
+Epoch 18/50
+30s - loss: 499.1917 - val_loss: 363.5724
+Epoch 00017: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-5.hdf5
+Epoch 19/50
+30s - loss: 476.0042 - val_loss: 243.2581
+Epoch 00018: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-5.hdf5
+Epoch 20/50
+30s - loss: 496.0638 - val_loss: 872.9809
+Epoch 00019: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-5.hdf5
+Epoch 21/50
+30s - loss: 507.8690 - val_loss: 275.8344
+Epoch 00020: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-5.hdf5
+Epoch 22/50
+30s - loss: 487.8086 - val_loss: 220.0053
+Epoch 00021: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-5.hdf5
+Epoch 23/50
+30s - loss: 479.4704 - val_loss: 225.4723
+Epoch 00022: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-5.hdf5
+Epoch 24/50
+30s - loss: 472.5756 - val_loss: 271.4111
+Epoch 00023: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-5.hdf5
+Epoch 25/50
+30s - loss: 468.9212 - val_loss: 308.1216
+Epoch 00024: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-5.hdf5
+Epoch 26/50
+30s - loss: 472.8289 - val_loss: 271.9633
+Epoch 00025: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-5.hdf5
+Epoch 27/50
+30s - loss: 462.2984 - val_loss: 192.3939
+Epoch 00026: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-5.hdf5
+Epoch 28/50
+30s - loss: 449.9953 - val_loss: 291.5471
+Epoch 00027: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-5.hdf5
+Epoch 29/50
+30s - loss: 446.1263 - val_loss: 379.7718
+Epoch 00028: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-5.hdf5
+Epoch 30/50
+30s - loss: 507.1640 - val_loss: 837.3720
+Epoch 00029: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-5.hdf5
+Epoch 31/50
+30s - loss: 457.3766 - val_loss: 978.7736
+Epoch 00030: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-5.hdf5
+Epoch 32/50
+30s - loss: 440.0233 - val_loss: 746.0301
+Epoch 00031: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-5.hdf5
+Epoch 33/50
+30s - loss: 443.6448 - val_loss: 2321.1642
+Epoch 00032: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-5.hdf5
+Epoch 34/50
+30s - loss: 459.0716 - val_loss: 675.5677
+Epoch 00033: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-5.hdf5
+Epoch 35/50
+30s - loss: 445.2384 - val_loss: 272.6544
+Epoch 00034: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-5.hdf5
+Epoch 36/50
+30s - loss: 443.5366 - val_loss: 681.7476
+Epoch 00035: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-5.hdf5
+Epoch 37/50
+30s - loss: 442.4050 - val_loss: 669.1688
+Epoch 00036: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-5.hdf5
+Epoch 38/50
+30s - loss: 458.6254 - val_loss: 933.4984
+Epoch 00037: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-5.hdf5
+Epoch 39/50
+30s - loss: 437.6509 - val_loss: 585.9121
+Epoch 00038: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-5.hdf5
+Epoch 40/50
+30s - loss: 438.4560 - val_loss: 929.5667
+Epoch 00039: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-5.hdf5
+Epoch 41/50
+30s - loss: 432.5198 - val_loss: 541.5308
+Epoch 00040: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-5.hdf5
+Epoch 42/50
+30s - loss: 435.2616 - val_loss: 446.1997
+Epoch 00041: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-5.hdf5
+Epoch 43/50
+30s - loss: 432.2705 - val_loss: 640.2841
+Epoch 00042: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-5.hdf5
+Epoch 44/50
+30s - loss: 443.3490 - val_loss: 678.3226
+Epoch 00043: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-5.hdf5
+Epoch 45/50
+30s - loss: 445.5636 - val_loss: 576.1896
+Epoch 00044: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-5.hdf5
+Epoch 46/50
+30s - loss: 420.0028 - val_loss: 1044.7731
+Epoch 00045: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-5.hdf5
+Epoch 47/50
+30s - loss: 434.0240 - val_loss: 756.1717
+Epoch 00046: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-5.hdf5
+Epoch 48/50
+30s - loss: 410.1073 - val_loss: 1291.3012
+Epoch 00047: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-5.hdf5
+Epoch 49/50
+30s - loss: 447.8659 - val_loss: 2065.1688
+Epoch 00048: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-5.hdf5
+Epoch 50/50
+30s - loss: 437.6128 - val_loss: 910.5879
+Epoch 00049: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-5.hdf5
+in mse (5957, 1) (5957, 1) 1
+in mse (585, 1) (585, 1) 1
+in mse (585, 1) (585, 1) 1
+train mse = 56.0622, validation mse = 910.588, test mse = 910.588
+train dist = 5.78859, validation dist = 16.3909, test dist = 16.3909
+After sliding window: (585, 100, 72) (585, 1)
+first and second part lengths are... 3420 2735
+After sliding window: (3321, 100, 72) (3321, 1)
+After sliding window: (2636, 100, 72) (2636, 1)
+SLIDING WINDOW : shapes of test and rest: (585, 100, 72) (5957, 100, 72)
+test: (585, 100, 72) (585, 1) rest: (5957, 100, 72) (5957, 1)
+Train on 5957 samples, validate on 585 samples
+Epoch 1/50
+30s - loss: 84690.1023 - val_loss: 78407.1340
+Epoch 00000: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-6.hdf5
+Epoch 2/50
+30s - loss: 67918.1950 - val_loss: 61696.3015
+Epoch 00001: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-6.hdf5
+Epoch 3/50
+30s - loss: 53486.1153 - val_loss: 49020.5939
+Epoch 00002: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-6.hdf5
+Epoch 4/50
+30s - loss: 43273.6781 - val_loss: 40340.1314
+Epoch 00003: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-6.hdf5
+Epoch 5/50
+30s - loss: 33956.0317 - val_loss: 28329.0567
+Epoch 00004: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-6.hdf5
+Epoch 6/50
+30s - loss: 23131.2358 - val_loss: 20265.0489
+Epoch 00005: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-6.hdf5
+Epoch 7/50
+30s - loss: 15951.7043 - val_loss: 14228.7761
+Epoch 00006: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-6.hdf5
+Epoch 8/50
+30s - loss: 10725.6616 - val_loss: 9359.8646
+Epoch 00007: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-6.hdf5
+Epoch 9/50
+30s - loss: 7227.6301 - val_loss: 6536.2665
+Epoch 00008: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-6.hdf5
+Epoch 10/50
+30s - loss: 4929.3683 - val_loss: 4294.3240
+Epoch 00009: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-6.hdf5
+Epoch 11/50
+30s - loss: 3569.6646 - val_loss: 3026.1968
+Epoch 00010: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-6.hdf5
+Epoch 12/50
+30s - loss: 2639.4003 - val_loss: 2144.4635
+Epoch 00011: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-6.hdf5
+Epoch 13/50
+30s - loss: 1640.7680 - val_loss: 1100.6592
+Epoch 00012: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-6.hdf5
+Epoch 14/50
+30s - loss: 971.1869 - val_loss: 749.4119
+Epoch 00013: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-6.hdf5
+Epoch 15/50
+30s - loss: 667.9836 - val_loss: 403.6104
+Epoch 00014: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-6.hdf5
+Epoch 16/50
+30s - loss: 524.5409 - val_loss: 648.5849
+Epoch 00015: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-6.hdf5
+Epoch 17/50
+30s - loss: 500.3006 - val_loss: 331.2444
+Epoch 00016: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-6.hdf5
+Epoch 18/50
+30s - loss: 470.9999 - val_loss: 175.7679
+Epoch 00017: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-6.hdf5
+Epoch 19/50
+30s - loss: 470.4330 - val_loss: 165.5393
+Epoch 00018: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-6.hdf5
+Epoch 20/50
+30s - loss: 458.4872 - val_loss: 294.5264
+Epoch 00019: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-6.hdf5
+Epoch 21/50
+30s - loss: 462.8601 - val_loss: 217.4799
+Epoch 00020: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-6.hdf5
+Epoch 22/50
+30s - loss: 446.2161 - val_loss: 213.7710
+Epoch 00021: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-6.hdf5
+Epoch 23/50
+30s - loss: 458.4301 - val_loss: 199.4253
+Epoch 00022: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-6.hdf5
+Epoch 24/50
+30s - loss: 442.0673 - val_loss: 165.3191
+Epoch 00023: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-6.hdf5
+Epoch 25/50
+30s - loss: 442.9558 - val_loss: 166.0162
+Epoch 00024: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-6.hdf5
+Epoch 26/50
+30s - loss: 453.7830 - val_loss: 565.4518
+Epoch 00025: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-6.hdf5
+Epoch 27/50
+30s - loss: 449.2384 - val_loss: 148.5464
+Epoch 00026: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-6.hdf5
+Epoch 28/50
+30s - loss: 440.2745 - val_loss: 142.8353
+Epoch 00027: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-6.hdf5
+Epoch 29/50
+30s - loss: 438.8504 - val_loss: 208.2044
+Epoch 00028: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-6.hdf5
+Epoch 30/50
+30s - loss: 439.8571 - val_loss: 127.1118
+Epoch 00029: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-6.hdf5
+Epoch 31/50
+30s - loss: 442.5616 - val_loss: 158.4251
+Epoch 00030: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-6.hdf5
+Epoch 32/50
+30s - loss: 443.9988 - val_loss: 179.1452
+Epoch 00031: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-6.hdf5
+Epoch 33/50
+30s - loss: 454.7108 - val_loss: 195.2473
+Epoch 00032: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-6.hdf5
+Epoch 34/50
+30s - loss: 464.5873 - val_loss: 122.0639
+Epoch 00033: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-6.hdf5
+Epoch 35/50
+30s - loss: 438.8998 - val_loss: 280.3499
+Epoch 00034: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-6.hdf5
+Epoch 36/50
+30s - loss: 593.8461 - val_loss: 165.4634
+Epoch 00035: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-6.hdf5
+Epoch 37/50
+30s - loss: 447.1480 - val_loss: 146.8864
+Epoch 00036: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-6.hdf5
+Epoch 38/50
+30s - loss: 436.6168 - val_loss: 235.8500
+Epoch 00037: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-6.hdf5
+Epoch 39/50
+30s - loss: 422.1138 - val_loss: 302.9754
+Epoch 00038: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-6.hdf5
+Epoch 40/50
+30s - loss: 425.0785 - val_loss: 97.2365
+Epoch 00039: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-6.hdf5
+Epoch 41/50
+30s - loss: 437.0664 - val_loss: 132.8195
+Epoch 00040: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-6.hdf5
+Epoch 42/50
+30s - loss: 429.5174 - val_loss: 336.2925
+Epoch 00041: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-6.hdf5
+Epoch 43/50
+30s - loss: 426.5734 - val_loss: 135.0680
+Epoch 00042: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-6.hdf5
+Epoch 44/50
+30s - loss: 414.4319 - val_loss: 172.7760
+Epoch 00043: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-6.hdf5
+Epoch 45/50
+30s - loss: 422.7619 - val_loss: 146.5375
+Epoch 00044: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-6.hdf5
+Epoch 46/50
+30s - loss: 432.8168 - val_loss: 133.0521
+Epoch 00045: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-6.hdf5
+Epoch 47/50
+30s - loss: 421.7547 - val_loss: 112.0675
+Epoch 00046: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-6.hdf5
+Epoch 48/50
+30s - loss: 428.1440 - val_loss: 226.8508
+Epoch 00047: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-6.hdf5
+Epoch 49/50
+30s - loss: 407.7672 - val_loss: 145.3086
+Epoch 00048: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-6.hdf5
+Epoch 50/50
+30s - loss: 424.0991 - val_loss: 218.2739
+Epoch 00049: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-6.hdf5
+in mse (5957, 1) (5957, 1) 1
+in mse (585, 1) (585, 1) 1
+in mse (585, 1) (585, 1) 1
+train mse = 61.5516, validation mse = 218.274, test mse = 218.274
+train dist = 5.6718, validation dist = 10.233, test dist = 10.233
+After sliding window: (585, 100, 72) (585, 1)
+first and second part lengths are... 4104 2051
+After sliding window: (4005, 100, 72) (4005, 1)
+After sliding window: (1952, 100, 72) (1952, 1)
+SLIDING WINDOW : shapes of test and rest: (585, 100, 72) (5957, 100, 72)
+test: (585, 100, 72) (585, 1) rest: (5957, 100, 72) (5957, 1)
+Train on 5957 samples, validate on 585 samples
+Epoch 1/50
+30s - loss: 84754.7987 - val_loss: 80872.7361
+Epoch 00000: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-7.hdf5
+Epoch 2/50
+30s - loss: 67332.7698 - val_loss: 63797.4037
+Epoch 00001: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-7.hdf5
+Epoch 3/50
+30s - loss: 53115.7442 - val_loss: 50968.3831
+Epoch 00002: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-7.hdf5
+Epoch 4/50
+30s - loss: 42777.0884 - val_loss: 41720.8634
+Epoch 00003: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-7.hdf5
+Epoch 5/50
+30s - loss: 39969.6659 - val_loss: 44635.7468
+Epoch 00004: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-7.hdf5
+Epoch 6/50
+30s - loss: 34991.2487 - val_loss: 27300.3312
+Epoch 00005: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-7.hdf5
+Epoch 7/50
+30s - loss: 21398.0111 - val_loss: 19960.1404
+Epoch 00006: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-7.hdf5
+Epoch 8/50
+30s - loss: 15003.6688 - val_loss: 13166.6804
+Epoch 00007: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-7.hdf5
+Epoch 9/50
+30s - loss: 10172.2920 - val_loss: 9027.3530
+Epoch 00008: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-7.hdf5
+Epoch 10/50
+30s - loss: 6639.2845 - val_loss: 5671.3850
+Epoch 00009: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-7.hdf5
+Epoch 11/50
+30s - loss: 4459.1840 - val_loss: 3667.5541
+Epoch 00010: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-7.hdf5
+Epoch 12/50
+30s - loss: 3002.0629 - val_loss: 2549.7098
+Epoch 00011: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-7.hdf5
+Epoch 13/50
+30s - loss: 2039.9765 - val_loss: 1493.1133
+Epoch 00012: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-7.hdf5
+Epoch 14/50
+30s - loss: 1231.1283 - val_loss: 822.5530
+Epoch 00013: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-7.hdf5
+Epoch 15/50
+30s - loss: 874.2725 - val_loss: 372.5406
+Epoch 00014: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-7.hdf5
+Epoch 16/50
+30s - loss: 625.6876 - val_loss: 262.4742
+Epoch 00015: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-7.hdf5
+Epoch 17/50
+30s - loss: 523.5119 - val_loss: 242.7423
+Epoch 00016: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-7.hdf5
+Epoch 18/50
+30s - loss: 488.8559 - val_loss: 186.6914
+Epoch 00017: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-7.hdf5
+Epoch 19/50
+30s - loss: 565.2959 - val_loss: 85.9969
+Epoch 00018: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-7.hdf5
+Epoch 20/50
+30s - loss: 474.5635 - val_loss: 118.3044
+Epoch 00019: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-7.hdf5
+Epoch 21/50
+30s - loss: 476.1432 - val_loss: 121.5870
+Epoch 00020: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-7.hdf5
+Epoch 22/50
+30s - loss: 465.8332 - val_loss: 139.6974
+Epoch 00021: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-7.hdf5
+Epoch 23/50
+30s - loss: 510.9086 - val_loss: 229.0258
+Epoch 00022: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-7.hdf5
+Epoch 24/50
+30s - loss: 495.0273 - val_loss: 80.2456
+Epoch 00023: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-7.hdf5
+Epoch 25/50
+30s - loss: 470.7723 - val_loss: 148.2292
+Epoch 00024: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-7.hdf5
+Epoch 26/50
+30s - loss: 559.5895 - val_loss: 108.9070
+Epoch 00025: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-7.hdf5
+Epoch 27/50
+30s - loss: 472.9517 - val_loss: 139.7322
+Epoch 00026: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-7.hdf5
+Epoch 28/50
+30s - loss: 453.5696 - val_loss: 130.5586
+Epoch 00027: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-7.hdf5
+Epoch 29/50
+30s - loss: 463.6829 - val_loss: 101.0039
+Epoch 00028: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-7.hdf5
+Epoch 30/50
+30s - loss: 459.2320 - val_loss: 123.5288
+Epoch 00029: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-7.hdf5
+Epoch 31/50
+30s - loss: 449.1770 - val_loss: 124.6505
+Epoch 00030: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-7.hdf5
+Epoch 32/50
+30s - loss: 449.2078 - val_loss: 105.9813
+Epoch 00031: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-7.hdf5
+Epoch 33/50
+30s - loss: 441.2004 - val_loss: 104.3781
+Epoch 00032: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-7.hdf5
+Epoch 34/50
+30s - loss: 444.4449 - val_loss: 81.0714
+Epoch 00033: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-7.hdf5
+Epoch 35/50
+30s - loss: 456.8327 - val_loss: 130.0422
+Epoch 00034: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-7.hdf5
+Epoch 36/50
+30s - loss: 451.4462 - val_loss: 91.3288
+Epoch 00035: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-7.hdf5
+Epoch 37/50
+30s - loss: 450.5682 - val_loss: 131.5885
+Epoch 00036: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-7.hdf5
+Epoch 38/50
+30s - loss: 456.1669 - val_loss: 106.3289
+Epoch 00037: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-7.hdf5
+Epoch 39/50
+30s - loss: 487.8874 - val_loss: 79.0856
+Epoch 00038: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-7.hdf5
+Epoch 40/50
+30s - loss: 454.8333 - val_loss: 99.8820
+Epoch 00039: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-7.hdf5
+Epoch 41/50
+30s - loss: 435.8905 - val_loss: 72.3884
+Epoch 00040: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-7.hdf5
+Epoch 42/50
+30s - loss: 453.0615 - val_loss: 91.3141
+Epoch 00041: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-7.hdf5
+Epoch 43/50
+30s - loss: 463.5432 - val_loss: 81.6328
+Epoch 00042: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-7.hdf5
+Epoch 44/50
+30s - loss: 434.5439 - val_loss: 114.6785
+Epoch 00043: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-7.hdf5
+Epoch 45/50
+30s - loss: 432.5573 - val_loss: 86.0378
+Epoch 00044: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-7.hdf5
+Epoch 46/50
+30s - loss: 433.0902 - val_loss: 88.6446
+Epoch 00045: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-7.hdf5
+Epoch 47/50
+30s - loss: 431.0615 - val_loss: 137.6910
+Epoch 00046: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-7.hdf5
+Epoch 48/50
+30s - loss: 440.6971 - val_loss: 85.7660
+Epoch 00047: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-7.hdf5
+Epoch 49/50
+30s - loss: 432.1850 - val_loss: 80.2572
+Epoch 00048: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-7.hdf5
+Epoch 50/50
+30s - loss: 431.0000 - val_loss: 122.9470
+Epoch 00049: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-7.hdf5
+in mse (5957, 1) (5957, 1) 1
+in mse (585, 1) (585, 1) 1
+in mse (585, 1) (585, 1) 1
+train mse = 83.2685, validation mse = 122.947, test mse = 122.947
+train dist = 6.53952, validation dist = 8.32503, test dist = 8.32503
+After sliding window: (585, 100, 72) (585, 1)
+first and second part lengths are... 4788 1367
+After sliding window: (4689, 100, 72) (4689, 1)
+After sliding window: (1268, 100, 72) (1268, 1)
+SLIDING WINDOW : shapes of test and rest: (585, 100, 72) (5957, 100, 72)
+test: (585, 100, 72) (585, 1) rest: (5957, 100, 72) (5957, 1)
+Train on 5957 samples, validate on 585 samples
+Epoch 1/50
+30s - loss: 83459.9418 - val_loss: 83166.4639
+Epoch 00000: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-8.hdf5
+Epoch 2/50
+30s - loss: 67274.8498 - val_loss: 66472.7238
+Epoch 00001: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-8.hdf5
+Epoch 3/50
+30s - loss: 55778.7065 - val_loss: 57300.4900
+Epoch 00002: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-8.hdf5
+Epoch 4/50
+30s - loss: 47192.7946 - val_loss: 47282.9315
+Epoch 00003: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-8.hdf5
+Epoch 5/50
+30s - loss: 41482.6494 - val_loss: 38304.5090
+Epoch 00004: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-8.hdf5
+Epoch 6/50
+30s - loss: 30759.2837 - val_loss: 27270.8014
+Epoch 00005: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-8.hdf5
+Epoch 7/50
+30s - loss: 20787.8658 - val_loss: 18742.3627
+Epoch 00006: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-8.hdf5
+Epoch 8/50
+30s - loss: 14093.8717 - val_loss: 11712.0572
+Epoch 00007: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-8.hdf5
+Epoch 9/50
+30s - loss: 9368.8374 - val_loss: 7235.0658
+Epoch 00008: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-8.hdf5
+Epoch 10/50
+30s - loss: 6128.0674 - val_loss: 4441.8700
+Epoch 00009: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-8.hdf5
+Epoch 11/50
+30s - loss: 4218.5474 - val_loss: 3699.7157
+Epoch 00010: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-8.hdf5
+Epoch 12/50
+30s - loss: 3034.4295 - val_loss: 2315.2813
+Epoch 00011: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-8.hdf5
+Epoch 13/50
+30s - loss: 2147.2819 - val_loss: 1383.9753
+Epoch 00012: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-8.hdf5
+Epoch 14/50
+30s - loss: 1312.7922 - val_loss: 758.6838
+Epoch 00013: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-8.hdf5
+Epoch 15/50
+30s - loss: 873.7604 - val_loss: 422.9753
+Epoch 00014: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-8.hdf5
+Epoch 16/50
+30s - loss: 578.6529 - val_loss: 206.4841
+Epoch 00015: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-8.hdf5
+Epoch 17/50
+30s - loss: 495.7135 - val_loss: 174.7165
+Epoch 00016: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-8.hdf5
+Epoch 18/50
+30s - loss: 484.9259 - val_loss: 153.9373
+Epoch 00017: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-8.hdf5
+Epoch 19/50
+30s - loss: 465.4634 - val_loss: 182.4085
+Epoch 00018: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-8.hdf5
+Epoch 20/50
+30s - loss: 494.7402 - val_loss: 317.6435
+Epoch 00019: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-8.hdf5
+Epoch 21/50
+30s - loss: 458.0119 - val_loss: 317.6198
+Epoch 00020: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-8.hdf5
+Epoch 22/50
+30s - loss: 456.0468 - val_loss: 338.0927
+Epoch 00021: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-8.hdf5
+Epoch 23/50
+30s - loss: 474.8596 - val_loss: 136.6612
+Epoch 00022: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-8.hdf5
+Epoch 24/50
+30s - loss: 432.6220 - val_loss: 430.7002
+Epoch 00023: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-8.hdf5
+Epoch 25/50
+30s - loss: 453.4402 - val_loss: 768.9257
+Epoch 00024: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-8.hdf5
+Epoch 26/50
+30s - loss: 438.1113 - val_loss: 322.2998
+Epoch 00025: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-8.hdf5
+Epoch 27/50
+30s - loss: 452.4683 - val_loss: 300.6449
+Epoch 00026: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-8.hdf5
+Epoch 28/50
+30s - loss: 440.9983 - val_loss: 190.4485
+Epoch 00027: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-8.hdf5
+Epoch 29/50
+30s - loss: 437.9933 - val_loss: 199.0492
+Epoch 00028: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-8.hdf5
+Epoch 30/50
+30s - loss: 430.1351 - val_loss: 152.5629
+Epoch 00029: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-8.hdf5
+Epoch 31/50
+30s - loss: 453.4991 - val_loss: 139.2029
+Epoch 00030: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-8.hdf5
+Epoch 32/50
+30s - loss: 438.9430 - val_loss: 184.3377
+Epoch 00031: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-8.hdf5
+Epoch 33/50
+30s - loss: 417.8361 - val_loss: 224.6340
+Epoch 00032: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-8.hdf5
+Epoch 34/50
+30s - loss: 438.7769 - val_loss: 123.2806
+Epoch 00033: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-8.hdf5
+Epoch 35/50
+30s - loss: 432.0499 - val_loss: 162.3475
+Epoch 00034: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-8.hdf5
+Epoch 36/50
+30s - loss: 424.8739 - val_loss: 157.9829
+Epoch 00035: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-8.hdf5
+Epoch 37/50
+30s - loss: 424.6367 - val_loss: 127.3599
+Epoch 00036: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-8.hdf5
+Epoch 38/50
+30s - loss: 424.2260 - val_loss: 174.7187
+Epoch 00037: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-8.hdf5
+Epoch 39/50
+30s - loss: 415.8307 - val_loss: 320.8625
+Epoch 00038: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-8.hdf5
+Epoch 40/50
+30s - loss: 422.5468 - val_loss: 403.2664
+Epoch 00039: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-8.hdf5
+Epoch 41/50
+30s - loss: 434.6362 - val_loss: 103.1413
+Epoch 00040: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-8.hdf5
+Epoch 42/50
+30s - loss: 407.9839 - val_loss: 313.0719
+Epoch 00041: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-8.hdf5
+Epoch 43/50
+30s - loss: 409.3443 - val_loss: 225.3455
+Epoch 00042: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-8.hdf5
+Epoch 44/50
+30s - loss: 419.4058 - val_loss: 229.4371
+Epoch 00043: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-8.hdf5
+Epoch 45/50
+30s - loss: 397.5455 - val_loss: 207.2832
+Epoch 00044: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-8.hdf5
+Epoch 46/50
+30s - loss: 408.2206 - val_loss: 99.4117
+Epoch 00045: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-8.hdf5
+Epoch 47/50
+30s - loss: 428.7101 - val_loss: 119.7877
+Epoch 00046: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-8.hdf5
+Epoch 48/50
+30s - loss: 399.4114 - val_loss: 94.8202
+Epoch 00047: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-8.hdf5
+Epoch 49/50
+30s - loss: 406.1598 - val_loss: 99.7675
+Epoch 00048: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-8.hdf5
+Epoch 50/50
+30s - loss: 404.7706 - val_loss: 129.6266
+Epoch 00049: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-8.hdf5
+in mse (5957, 1) (5957, 1) 1
+in mse (585, 1) (585, 1) 1
+in mse (585, 1) (585, 1) 1
+train mse = 51.4793, validation mse = 129.627, test mse = 129.627
+train dist = 5.50501, validation dist = 7.97379, test dist = 7.97379
+After sliding window: (585, 100, 72) (585, 1)
+first and second part lengths are... 5472 683
+After sliding window: (5373, 100, 72) (5373, 1)
+After sliding window: (584, 100, 72) (584, 1)
+SLIDING WINDOW : shapes of test and rest: (585, 100, 72) (5957, 100, 72)
+test: (585, 100, 72) (585, 1) rest: (5957, 100, 72) (5957, 1)
+Train on 5957 samples, validate on 585 samples
+Epoch 1/50
+30s - loss: 83516.9948 - val_loss: 63092.8748
+Epoch 00000: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-9.hdf5
+Epoch 2/50
+30s - loss: 66736.8721 - val_loss: 53025.6808
+Epoch 00001: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-9.hdf5
+Epoch 3/50
+30s - loss: 53931.4140 - val_loss: 43392.6293
+Epoch 00002: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-9.hdf5
+Epoch 4/50
+30s - loss: 43120.4180 - val_loss: 37529.9044
+Epoch 00003: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-9.hdf5
+Epoch 5/50
+30s - loss: 35049.8880 - val_loss: 26620.9630
+Epoch 00004: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-9.hdf5
+Epoch 6/50
+30s - loss: 25613.9573 - val_loss: 19058.0857
+Epoch 00005: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-9.hdf5
+Epoch 7/50
+30s - loss: 17799.8803 - val_loss: 13443.1074
+Epoch 00006: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-9.hdf5
+Epoch 8/50
+30s - loss: 12510.9220 - val_loss: 9163.4042
+Epoch 00007: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-9.hdf5
+Epoch 9/50
+30s - loss: 8259.9517 - val_loss: 6772.2040
+Epoch 00008: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-9.hdf5
+Epoch 10/50
+30s - loss: 5385.3391 - val_loss: 3769.2490
+Epoch 00009: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-9.hdf5
+Epoch 11/50
+30s - loss: 3845.9482 - val_loss: 2733.0049
+Epoch 00010: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-9.hdf5
+Epoch 12/50
+30s - loss: 2930.9802 - val_loss: 2214.0281
+Epoch 00011: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-9.hdf5
+Epoch 13/50
+30s - loss: 2107.9277 - val_loss: 1290.0691
+Epoch 00012: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-9.hdf5
+Epoch 14/50
+30s - loss: 1391.2791 - val_loss: 755.8130
+Epoch 00013: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-9.hdf5
+Epoch 15/50
+30s - loss: 884.7297 - val_loss: 569.6739
+Epoch 00014: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-9.hdf5
+Epoch 16/50
+30s - loss: 648.0682 - val_loss: 292.5677
+Epoch 00015: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-9.hdf5
+Epoch 17/50
+30s - loss: 558.3377 - val_loss: 215.5408
+Epoch 00016: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-9.hdf5
+Epoch 18/50
+30s - loss: 534.0230 - val_loss: 249.5425
+Epoch 00017: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-9.hdf5
+Epoch 19/50
+30s - loss: 485.9382 - val_loss: 251.2262
+Epoch 00018: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-9.hdf5
+Epoch 20/50
+30s - loss: 480.8184 - val_loss: 232.0488
+Epoch 00019: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-9.hdf5
+Epoch 21/50
+30s - loss: 468.4606 - val_loss: 151.4189
+Epoch 00020: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-9.hdf5
+Epoch 22/50
+30s - loss: 465.1023 - val_loss: 325.6941
+Epoch 00021: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-9.hdf5
+Epoch 23/50
+30s - loss: 480.2000 - val_loss: 292.1654
+Epoch 00022: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-9.hdf5
+Epoch 24/50
+30s - loss: 456.0136 - val_loss: 273.7436
+Epoch 00023: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-9.hdf5
+Epoch 25/50
+30s - loss: 479.4544 - val_loss: 201.5548
+Epoch 00024: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-9.hdf5
+Epoch 26/50
+30s - loss: 461.8296 - val_loss: 742.5246
+Epoch 00025: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-9.hdf5
+Epoch 27/50
+30s - loss: 453.0158 - val_loss: 280.2785
+Epoch 00026: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-9.hdf5
+Epoch 28/50
+30s - loss: 470.2651 - val_loss: 292.4619
+Epoch 00027: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-9.hdf5
+Epoch 29/50
+30s - loss: 448.9809 - val_loss: 188.9630
+Epoch 00028: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-9.hdf5
+Epoch 30/50
+30s - loss: 456.1435 - val_loss: 226.8163
+Epoch 00029: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-9.hdf5
+Epoch 31/50
+30s - loss: 478.0183 - val_loss: 195.8155
+Epoch 00030: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-9.hdf5
+Epoch 32/50
+30s - loss: 459.3271 - val_loss: 343.2197
+Epoch 00031: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-9.hdf5
+Epoch 33/50
+30s - loss: 458.2992 - val_loss: 184.3610
+Epoch 00032: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-9.hdf5
+Epoch 34/50
+30s - loss: 449.2255 - val_loss: 202.3902
+Epoch 00033: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-9.hdf5
+Epoch 35/50
+30s - loss: 449.1303 - val_loss: 251.8129
+Epoch 00034: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-9.hdf5
+Epoch 36/50
+30s - loss: 428.7295 - val_loss: 2270.2885
+Epoch 00035: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-9.hdf5
+Epoch 37/50
+30s - loss: 464.1663 - val_loss: 208.1100
+Epoch 00036: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-9.hdf5
+Epoch 38/50
+30s - loss: 454.4449 - val_loss: 637.6886
+Epoch 00037: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-9.hdf5
+Epoch 39/50
+30s - loss: 453.4387 - val_loss: 166.4197
+Epoch 00038: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-9.hdf5
+Epoch 40/50
+30s - loss: 464.1945 - val_loss: 201.9737
+Epoch 00039: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-9.hdf5
+Epoch 41/50
+30s - loss: 459.3800 - val_loss: 186.2935
+Epoch 00040: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-9.hdf5
+Epoch 42/50
+30s - loss: 444.8213 - val_loss: 207.5646
+Epoch 00041: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-9.hdf5
+Epoch 43/50
+30s - loss: 430.6017 - val_loss: 159.1678
+Epoch 00042: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-9.hdf5
+Epoch 44/50
+30s - loss: 423.8653 - val_loss: 174.1317
+Epoch 00043: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-9.hdf5
+Epoch 45/50
+30s - loss: 425.7233 - val_loss: 192.5897
+Epoch 00044: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-9.hdf5
+Epoch 46/50
+30s - loss: 426.3748 - val_loss: 176.5300
+Epoch 00045: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-9.hdf5
+Epoch 47/50
+30s - loss: 421.6888 - val_loss: 171.0458
+Epoch 00046: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-9.hdf5
+Epoch 48/50
+30s - loss: 409.1723 - val_loss: 178.0626
+Epoch 00047: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-9.hdf5
+Epoch 49/50
+30s - loss: 434.2854 - val_loss: 183.8900
+Epoch 00048: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-9.hdf5
+Epoch 50/50
+30s - loss: 427.5673 - val_loss: 163.0082
+Epoch 00049: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-9.hdf5
+in mse (5957, 1) (5957, 1) 1
+in mse (585, 1) (585, 1) 1
+in mse (585, 1) (585, 1) 1
+train mse = 40.4363, validation mse = 163.008, test mse = 163.008
+train dist = 4.57995, validation dist = 8.89871, test dist = 8.89871
+After sliding window: (584, 100, 72) (584, 1)
+first and second part lengths are... 6156 1
+After sliding window: (6057, 100, 72) (6057, 1)
+After sliding window: (0, 100, 72) (0, 1)
+SLIDING WINDOW : shapes of test and rest: (584, 100, 72) (6057, 100, 72)
+test: (584, 100, 72) (584, 1) rest: (6057, 100, 72) (6057, 1)
+Train on 6057 samples, validate on 584 samples
+Epoch 1/50
+31s - loss: 83031.4661 - val_loss: 71589.8902
+Epoch 00000: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-10.hdf5
+Epoch 2/50
+31s - loss: 64534.0346 - val_loss: 54562.2354
+Epoch 00001: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-10.hdf5
+Epoch 3/50
+31s - loss: 50628.2410 - val_loss: 41810.6213
+Epoch 00002: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-10.hdf5
+Epoch 4/50
+31s - loss: 43078.7504 - val_loss: 38980.0179
+Epoch 00003: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-10.hdf5
+Epoch 5/50
+31s - loss: 39413.9687 - val_loss: 28931.8942
+Epoch 00004: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-10.hdf5
+Epoch 6/50
+31s - loss: 26818.7091 - val_loss: 20601.2963
+Epoch 00005: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-10.hdf5
+Epoch 7/50
+31s - loss: 18748.8454 - val_loss: 12830.2290
+Epoch 00006: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-10.hdf5
+Epoch 8/50
+31s - loss: 12798.5058 - val_loss: 7992.8379
+Epoch 00007: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-10.hdf5
+Epoch 9/50
+31s - loss: 8390.6875 - val_loss: 5433.7016
+Epoch 00008: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-10.hdf5
+Epoch 10/50
+31s - loss: 5224.6826 - val_loss: 6882.6154
+Epoch 00009: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-10.hdf5
+Epoch 11/50
+31s - loss: 3707.4834 - val_loss: 2749.0222
+Epoch 00010: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-10.hdf5
+Epoch 12/50
+31s - loss: 2552.3237 - val_loss: 2097.7970
+Epoch 00011: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-10.hdf5
+Epoch 13/50
+31s - loss: 1530.4899 - val_loss: 874.6028
+Epoch 00012: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-10.hdf5
+Epoch 14/50
+31s - loss: 990.4326 - val_loss: 604.3168
+Epoch 00013: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-10.hdf5
+Epoch 15/50
+31s - loss: 655.5491 - val_loss: 474.4791
+Epoch 00014: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-10.hdf5
+Epoch 16/50
+31s - loss: 515.3396 - val_loss: 449.1775
+Epoch 00015: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-10.hdf5
+Epoch 17/50
+31s - loss: 495.5466 - val_loss: 412.8089
+Epoch 00016: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-10.hdf5
+Epoch 18/50
+31s - loss: 476.7032 - val_loss: 378.7698
+Epoch 00017: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-10.hdf5
+Epoch 19/50
+31s - loss: 482.3203 - val_loss: 458.6360
+Epoch 00018: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-10.hdf5
+Epoch 20/50
+31s - loss: 452.8773 - val_loss: 388.8461
+Epoch 00019: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-10.hdf5
+Epoch 21/50
+31s - loss: 457.9278 - val_loss: 372.3760
+Epoch 00020: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-10.hdf5
+Epoch 22/50
+31s - loss: 457.5700 - val_loss: 366.5469
+Epoch 00021: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-10.hdf5
+Epoch 23/50
+31s - loss: 440.4371 - val_loss: 358.2057
+Epoch 00022: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-10.hdf5
+Epoch 24/50
+31s - loss: 456.4874 - val_loss: 1033.9759
+Epoch 00023: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-10.hdf5
+Epoch 25/50
+31s - loss: 456.3980 - val_loss: 1367.7858
+Epoch 00024: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-10.hdf5
+Epoch 26/50
+31s - loss: 454.5334 - val_loss: 1954.6586
+Epoch 00025: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-10.hdf5
+Epoch 27/50
+31s - loss: 471.4364 - val_loss: 752.5569
+Epoch 00026: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-10.hdf5
+Epoch 28/50
+31s - loss: 434.1966 - val_loss: 512.3597
+Epoch 00027: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-10.hdf5
+Epoch 29/50
+31s - loss: 417.3942 - val_loss: 418.6727
+Epoch 00028: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-10.hdf5
+Epoch 30/50
+31s - loss: 444.4791 - val_loss: 342.6662
+Epoch 00029: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-10.hdf5
+Epoch 31/50
+31s - loss: 434.7245 - val_loss: 2557.4257
+Epoch 00030: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-10.hdf5
+Epoch 32/50
+31s - loss: 424.7259 - val_loss: 423.0208
+Epoch 00031: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-10.hdf5
+Epoch 33/50
+31s - loss: 427.6178 - val_loss: 434.3341
+Epoch 00032: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-10.hdf5
+Epoch 34/50
+31s - loss: 444.1587 - val_loss: 2647.9855
+Epoch 00033: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-10.hdf5
+Epoch 35/50
+31s - loss: 416.4718 - val_loss: 448.8904
+Epoch 00034: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-10.hdf5
+Epoch 36/50
+31s - loss: 417.4551 - val_loss: 611.1012
+Epoch 00035: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-10.hdf5
+Epoch 37/50
+31s - loss: 448.5080 - val_loss: 269.6136
+Epoch 00036: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-10.hdf5
+Epoch 38/50
+31s - loss: 401.7571 - val_loss: 322.9944
+Epoch 00037: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-10.hdf5
+Epoch 39/50
+31s - loss: 406.4488 - val_loss: 247.1547
+Epoch 00038: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-10.hdf5
+Epoch 40/50
+31s - loss: 443.3496 - val_loss: 340.6057
+Epoch 00039: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-10.hdf5
+Epoch 41/50
+31s - loss: 438.4154 - val_loss: 349.4053
+Epoch 00040: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-10.hdf5
+Epoch 42/50
+31s - loss: 415.9274 - val_loss: 260.3543
+Epoch 00041: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-10.hdf5
+Epoch 43/50
+31s - loss: 431.4697 - val_loss: 155.0723
+Epoch 00042: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-10.hdf5
+Epoch 44/50
+31s - loss: 402.5997 - val_loss: 919.1697
+Epoch 00043: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-10.hdf5
+Epoch 45/50
+31s - loss: 399.1274 - val_loss: 163.8161
+Epoch 00044: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-10.hdf5
+Epoch 46/50
+31s - loss: 413.2238 - val_loss: 136.3464
+Epoch 00045: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-10.hdf5
+Epoch 47/50
+31s - loss: 403.5141 - val_loss: 769.2511
+Epoch 00046: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-10.hdf5
+Epoch 48/50
+31s - loss: 406.5188 - val_loss: 415.0587
+Epoch 00047: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-10.hdf5
+Epoch 49/50
+31s - loss: 406.9968 - val_loss: 154.1640
+Epoch 00048: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-10.hdf5
+Epoch 50/50
+31s - loss: 417.9211 - val_loss: 847.1737
+Epoch 00049: saving model to new_Caswell/newCaswell_cut25sec_R2192_1x1400_seq100_b64_v1-10.hdf5
+in mse (6057, 1) (6057, 1) 1
+in mse (584, 1) (584, 1) 1
+in mse (584, 1) (584, 1) 1
+train mse = 42.7317, validation mse = 847.174, test mse = 847.174
+train dist = 4.83604, validation dist = 13.8176, test dist = 13.8176
+train mean dist = 5.60216, valid mean dist = 11.3427, test mean dist = 11.3427
