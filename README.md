@@ -6,6 +6,6 @@ The all figures from the article are included as .png images, but can also be ge
 ``plots/article_plots.ipynb`` Figures 1 and 3
 ``2D/results.ipynb`` more figures
 ``2D/gradients.ipynb`` figures relating to gradients
-``2D/Activity_tSNE_x.ipynb`` figures from SI about using T-sne
+``2D/Activity_tSNE.ipynb`` figures from SI about using T-sne
 
 
