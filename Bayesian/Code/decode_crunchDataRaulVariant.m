@@ -98,7 +98,7 @@ cValid              =0.1; %Specify portion to keep back for test [1] or [0.1]
 %NL. Time bin overlap - currently set to half timewindow - windows overlap
 %one another. Set to 0 for no overlap, is measured in proportion of time
 %window 0 to <1
-tBinOverlap         =0;
+tBinOverlap         =0.5;
 
 %NL. Smooth the spike counts per pos bin before calculating spike count per
 %window. If specifed is the sigma in pos_samp of the Guassian used to
@@ -109,7 +109,8 @@ smthPS              =5; %Smoothing of spike train before getting counts
 %the first n seconds of a trial (which might be unreliable etc). Leave
 %empty not to trunctate at all otherwise specify in seconds how much to
 %lose.
-truncS              =[]; %[] or 25 for linear track
+truncS              =[]; % for 2D. 
+%truncS              =25; % for 1D. First 25secs are incorrectly recoreded 
 
 
 
@@ -253,8 +254,8 @@ for nCV         =1:nCVstep
     
     % --- Fourth decode and get measures of performance -------------------
     %Store this for each fold of the cross validation
-%     post            =decode_calcBayesPost(spkCnt, rms, dms, tBin); %3D mat [envSz1 x envSz2 x nTBin] FULL BAYES
- post            =decode_calcPost(spkCnt, rms, tBin); %3D mat [envSz1 x envSz2 x nTBin] OLD ML 
+    %post            =decode_calcBayesPost(spkCnt, rms, dms, tBin); %3D mat [envSz1 x envSz2 x nTBin] FULL BAYES with memory
+    post            =decode_calcPost(spkCnt, rms, tBin); %3D mat [envSz1 x envSz2 x nTBin] Maximum Likelihood Estimation
     
     %NL. decodes from the post - all returned values are in pixels
     [ err(:,nCV), decXY(:,:,nCV), trueXY(:,:,nCV), mlVal(:,nCV)] =...

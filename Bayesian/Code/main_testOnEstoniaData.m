@@ -13,20 +13,19 @@ tWin2Test       =0.2 : 0.2: 4;
 cValid          =0.1; %[0.1]
 
 %Specify window overlap (0 to <1) specify proportion of window to overlap
-% note this was previoulsy fixed at half the window but now is 200ms
-tBinOverlap     =(tWin2Test-0.2)./tWin2Test;
+% note this is fixed at half the window
+tBinOverlap    = (tWin2Test*0.5)./tWin2Test; 
 
 
 
 % --- TRIALS AND TETS TO LOAD ---------------------------------------------
-dataDir         ='/Users/caswell/Dropbox/tmpRaul/'; %will append
+dataDir         ='/home/deepmind/projects/RatGPS/Bayesian/Data/'; %will append
 %Specify trials to load and tets to use - not note usiing r2335 and r2142
 %due to too few cells
 %Screening open field
 
-%Now specify file name, tetrode to use and PPM
-% REMEMBER we now exlude first section of linear track trial - set in
-% decodeCrunch
+% for 2D uncomment the following block (lines 29 to 36)
+% Now specify file name, tetrode to use and PPM
 isZmaze       =false;
 fileTet         ={
     'R2192 - screening/20141001_R2192_screening', [9,10,11,12,13,14,15,16], 350;
@@ -36,27 +35,30 @@ fileTet         ={
     'R2337 - screening/20151127_R2337_screening', [9,10,11,12,13,14,15,16], 378
     };
 
-% Track - z maze
-% REMEMBER we now exlude first section of linear track trial - set in
+
+% for 1D uncomment the following block (lines 45 to 60)
+% 1D Track - z maze
+% REMEMBER we now exlude first 25s of linear track trial - set in
 % decodeCrunch
 % Note true PPM of the z-maze is 324 but when using linearised this changes
 % to 100 since scale is in cm
-% isZmaze         =true;
-% fileTet         ={
-%     'R2192 - track/20140110_R2192_track1', [9,10,11,12,13,14,15,16], 100;
-%     'R2198 - track/20140920_R2198_track1', [9,10,12,13,14,15,16], 100;
-%     'R2217 - track/20141218_R2217_track1', [9,10,11,13,14,15], 100;
-%     'R2336 - track/20151104_R2336_track1', [9,10,11,12,13,14,15,16], 100;
-%     'R2337 - track/20151127_R2337_track1', [9,10,11,12,13,14,15,16], 100
-%     };
+%isZmaze         =true;
+%fileTet         ={
+%    'R2192 - track/20140110_R2192_track1', [9,10,11,12,13,14,15,16], 100;
+%    'R2198 - track/20140920_R2198_track1', [9,10,12,13,14,15,16], 100;
+%    'R2217 - track/20141218_R2217_track1', [9,10,11,13,14,15], 100;
+%    'R2336 - track/20151104_R2336_track1', [9,10,11,12,13,14,15,16], 100;
+%    'R2337 - track/20151127_R2337_track1', [9,10,11,12,13,14,15,16], 100
+%    };
 % 
-% fileMat         ={
-%     'R2192 - track/cbLinearisedPos_R2192';
-%     'R2198 - track/cbLinearisedPos_R2198';
-%     'R2217 - track/cbLinearisedPos_R2217';
-%     'R2336 - track/cbLinearisedPos_R2336';
-%     'R2337 - track/cbLinearisedPos_R2337'
-%     };
+%fileMat         ={
+%    'R2192 - track/cbLinearisedPos_R2192';
+%    'R2198 - track/cbLinearisedPos_R2198';
+%    'R2217 - track/cbLinearisedPos_R2217';
+%    'R2336 - track/cbLinearisedPos_R2336';
+%    'R2337 - track/cbLinearisedPos_R2337'
+%    };
+
 
 %Not used - too few spikes
 % 'R2142 - screening/20140806_R2142_screening', [9,10,11,12,13,16];

@@ -1,0 +1,15 @@
+This is data to test with lineTrajDecode.m
+
+The mat is 3d the 3rd d being different events
+
+for each event, run these lines (event_reconstruction is the pMat matrix). 
+
+event_reconstruction = t2POS_popVect_pMat(:,:,i);
+
+  nanInd = find(~isnan(event_reconstruction(1,:)));
+    zeroInd = find(sum(event_reconstruction) > 0);
+    bins2use = intersect(nanInd,zeroInd);
+   pMat = event_reconstruction(:,min(bins2use):max(bins2use));
+    pMat(isnan(pMat)) = 0;
+
+then try the decoding on the resulting matrix

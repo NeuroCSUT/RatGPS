@@ -9,20 +9,20 @@ function [allMeanErr, allMedianErr] = main_testOnEstoniaData_downsamp( )
 
 % --- VARS ----------------------------------------------------------------
 %Specify the time windows to use in seconds
-tWin2Test       =1.2; %0.2 : 0.2: 10
+tWin2Test       =1.2; %using a fixed time window here, the best one for R2192
 
 %Specify cross validation to use 0.1 for 10% test set or 0.02 for 2%
 %(50fold)
 cValid          =0.1; %[0.1]
 
 %Specify window overlap (0 to <1) specify proportion of window to overlap
-% note this was previoulsy fixed at half the window but now is 200ms
-tBinOverlap     =(tWin2Test-0.2)./tWin2Test;
+% note this is fixed at half the window
+tBinOverlap     =(tWin2Test*0.5)./tWin2Test;
 
 
 
 % --- TRIALS AND TETS TO LOAD ---------------------------------------------
-dataDir         ='/Users/caswell/Dropbox/tmpRaul/'; %will append
+dataDir         ='/home/deepmind/projects/RatGPS/Bayesian/Data/'; %will append
 %Specify trials to load and tets to use - not note usiing r2335 and r2142
 %due to too few cells
 %Screening open field
