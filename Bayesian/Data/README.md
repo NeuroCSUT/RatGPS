@@ -1,5 +1,5 @@
-**Getting Data**
-Some of the data files are too big to upload to Github.
+**Getting Data**  
+Some of the data files are too big to be uploaded to Github.
 
 Therfore you must fetch them manually from the link below (Google Drive) and place them inside this folder.
 
