@@ -1,6 +1,7 @@
 **Getting Data**  
-Some of the data files are too big to be uploaded to Github.
+Some of the data files are too big to be uploaded to GitHub.
 
-Therfore you must fetch them manually from the link below (Google Drive) and place them inside this folder.
+Therfore you must fetch them manually from the link below (Zenodo repository) and place them inside this folder.
 
-https://drive.google.com/open?id=1y228g24txW_K-DNZXre_UU7r_U5EBZpj
+https://doi.org/10.5281/zenodo.2540921
+
